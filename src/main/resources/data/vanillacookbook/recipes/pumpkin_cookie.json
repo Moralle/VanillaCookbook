@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WPW",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "P": {
+      "item": "minecraft:pumpkin"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:pumpkin_cookie",
+    "count": 8
+  }
+}

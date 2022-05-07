@@ -1,0 +1,34 @@
+{
+	"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooking/mushroom_scrambled_eggs",
+      "vanillacookbook:cooking/vegetable_stew"
+    ]
+  },
+  "criteria": {
+    "has_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            "tag": "forge:mushrooms"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mushroom"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "SES",
+    "WMW"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "M": {
+      "tag": "forge:milk"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:berry_cake"
+  }
+}

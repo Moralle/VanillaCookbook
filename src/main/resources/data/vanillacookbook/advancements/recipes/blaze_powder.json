@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:hot_chicken_drumstick",
+      "vanillacookbook:hot_potato_chips",
+      "vanillacookbook:spicy_meatball"
+    ]
+  },
+  "criteria": {
+    "has_blaze_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:blaze_powder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blaze_powder"
+    ]
+  ]
+}

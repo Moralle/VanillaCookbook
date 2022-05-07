@@ -1,0 +1,48 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[40,)" #mandatory
+
+license="All rights reserved"
+
+issueTrackerURL="http://my.issue.tracker/" #optional
+
+[[mods]] #mandatory
+
+modId="vanillacookbook" #mandatory
+
+version="1.13" #mandatory
+
+displayName="Vanilla Cookbook" #mandatory
+
+# updateJSONURL="" #optional
+
+displayURL="" #optional
+
+logoFile="vanilla_cookbook.png" #optional
+
+itemIcon="vanillacookbook:book_cake"
+
+configBackground="minecraft:textures/block/stripped_spruce_log.png"
+
+credits="Moralle for making the actual mod. My friends Lars, Duo and Multi for their support and input." #optional
+
+authors="Moralle" #optional
+
+description='''
+A mod expanding food while staying close to vanilla Minecraft.
+'''
+
+[[dependencies.vanillacookbook]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.vanillacookbook]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19]"
+    ordering="NONE"
+    side="BOTH"

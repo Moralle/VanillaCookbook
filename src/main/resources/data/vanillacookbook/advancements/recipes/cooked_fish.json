@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:fish_and_chips"
+    ]
+  },
+  "criteria": {
+    "has_cooked_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:cooked_fishes"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cooked_fish"
+    ]
+  ]
+}

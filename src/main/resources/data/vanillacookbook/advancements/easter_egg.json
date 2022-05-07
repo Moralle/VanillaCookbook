@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:end/dragon_egg",
+  "display": {
+    "icon": {
+      "item": "vanillacookbook:chocolate_egg"
+    },
+    "title": {
+      "translate": "advancements.easter_egg.title"
+    },
+    "description": {
+      "translate": "advancements.easter_egg.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "criteria": {
+    "easter_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillacookbook:chocolate_egg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "easter_egg"
+    ]
+  ]
+}

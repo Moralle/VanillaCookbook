@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooked_egg",
+      "vanillacookbook:cooked_egg_smoking",
+      "vanillacookbook:cooked_egg_campfire",
+      "vanillacookbook:pudding",
+      "vanillacookbook:pancake",
+      "vanillacookbook:mushroom_scrambled_eggs"
+    ]
+  },
+  "criteria": {
+    "has_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:eggs"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_egg"
+    ]
+  ]
+}

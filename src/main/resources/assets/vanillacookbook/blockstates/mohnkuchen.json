@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "bites=0": { "model": "vanillacookbook:block/mohnkuchen" },
+        "bites=1": { "model": "vanillacookbook:block/mohnkuchen_slice1" },
+        "bites=2": { "model": "vanillacookbook:block/mohnkuchen_slice2" },
+        "bites=3": { "model": "vanillacookbook:block/mohnkuchen_slice3" },
+        "bites=4": { "model": "vanillacookbook:block/mohnkuchen_slice4" },
+        "bites=5": { "model": "vanillacookbook:block/mohnkuchen_slice5" },
+        "bites=6": { "model": "vanillacookbook:block/mohnkuchen_slice6" }
+    }
+}

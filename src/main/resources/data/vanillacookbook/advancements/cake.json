@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "display": {
+    "icon": {
+      "item": "vanillacookbook:book_cake"
+    },
+    "title": {
+      "translate": "advancements.cake.title"
+    },
+    "description": {
+      "translate": "advancements.cake.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "function": "vanillacookbook:berry_milk"
+  },
+  "criteria": {
+    "book_cake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillacookbook:book_cake"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "book_cake"
+    ]
+  ]
+}

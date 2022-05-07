@@ -1,0 +1,36 @@
+{
+	"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooking/garden_soup",
+      "vanillacookbook:cooking/mashed_potatoes",
+      "vanillacookbook:cooking/meat_stew",
+      "vanillacookbook:cooking/vegetable_stew"
+    ]
+  },
+  "criteria": {
+    "has_potato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            "minecraft:potato"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_potato"
+    ]
+  ]
+}

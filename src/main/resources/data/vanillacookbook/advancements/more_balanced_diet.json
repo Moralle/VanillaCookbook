@@ -1,0 +1,1221 @@
+{
+  "parent": "minecraft:husbandry/balanced_diet",
+  "display": {
+    "icon": {
+      "item": "vanillacookbook:baked_apple"
+    },
+    "title": {
+      "translate": "advancements.more_balanced_diet.title"
+    },
+    "description": {
+      "translate": "advancements.more_balanced_diet.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 200
+  },
+  "criteria": {
+    "cooked_bamboo": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "vanillacookbook:cooked_bamboo"
+          ]
+        }
+      }
+    },
+    "cooked_beetroot": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cooked_beetroot"
+          ]
+        }
+      }
+    },
+    "cooked_egg": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cooked_egg"
+          ]
+        }
+      }
+    },
+    "grilled_melon": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:grilled_melon"
+          ]
+        }
+      }
+    },
+    "baked_apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:baked_apple"
+          ]
+        }
+      }
+    },
+    "stuffed_sea_pickle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:stuffed_sea_pickle"
+          ]
+        }
+      }
+    },
+    "cooked_turtle_egg": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cooked_turtle_egg"
+          ]
+        }
+      }
+    },
+    "apple_juice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:apple_juice"
+          ]
+        }
+      }
+    },
+    "berry_juice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_juice"
+          ]
+        }
+      }
+    },
+    "cactus_juice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cactus_juice"
+          ]
+        }
+      }
+    },
+    "melon_juice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:melon_juice"
+          ]
+        }
+      }
+    },
+    "sea_pickle_juice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:sea_pickle_juice"
+          ]
+        }
+      }
+    },
+    "chorus_juice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chorus_juice"
+          ]
+        }
+      }
+    },
+    "leaf_tea": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:leaf_tea"
+          ]
+        }
+      }
+    },
+    "flower_tea": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:flower_tea"
+          ]
+        }
+      }
+    },
+    "chocolate_milk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chocolate_milk"
+          ]
+        }
+      }
+    },
+    "berry_milk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_milk"
+          ]
+        }
+      }
+    },
+    "milk_bottle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:milk_bottle"
+          ]
+        }
+      }
+    },
+    "cheese": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          "vanillacookbook:cheese"
+          ]
+        }
+      }
+    },
+    "garden_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:garden_soup"
+          ]
+        }
+      }
+    },
+    "pumpkin_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:pumpkin_soup"
+          ]
+        }
+      }
+    },
+    "fish_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:fish_stew"
+          ]
+        }
+      }
+    },
+    "vegetable_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:vegetable_stew"
+          ]
+        }
+      }
+    },
+    "meat_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:meat_stew"
+          ]
+        }
+      }
+    },
+    "chicken_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chicken_soup"
+          ]
+        }
+      }
+    },
+    "ink_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:ink_soup"
+          ]
+        }
+      }
+    },
+    "bone_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:bone_soup"
+          ]
+        }
+      }
+    },
+    "plain_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:plain_salad"
+          ]
+        }
+      }
+    },
+    "kelp_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:kelp_salad"
+          ]
+        }
+      }
+    },
+    "fruit_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:fruit_salad"
+          ]
+        }
+      }
+    },
+    "golden_fruit_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:golden_fruit_salad"
+          ]
+        }
+      }
+    },
+    "mashed_potatoes": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:mashed_potatoes"
+          ]
+        }
+      }
+    },
+    "apple_sauce": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:apple_sauce"
+          ]
+        }
+      }
+    },
+    "pudding": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:pudding"
+          ]
+        }
+      }
+    },
+    "chocolate_pudding": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chocolate_pudding"
+          ]
+        }
+      }
+    },
+    "jelly": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:jelly"
+          ]
+        }
+      }
+    },
+    "magma_jelly": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:magma_jelly"
+          ]
+        }
+      }
+    },
+    "smoldering_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:smoldering_stew"
+          ]
+        }
+      }
+    },
+    "apple_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:apple_pie"
+          ]
+        }
+      }
+    },
+    "beetroot_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:beetroot_pie"
+          ]
+        }
+      }
+    },
+    "berry_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_pie"
+          ]
+        }
+      }
+    },
+    "wart_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:wart_pie"
+          ]
+        }
+      }
+    },
+    "poisonous_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:poisonous_pie"
+          ]
+        }
+      }
+    },
+    "berry_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_cookie"
+          ]
+        }
+      }
+    },
+    "honey_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:honey_cookie"
+          ]
+        }
+      }
+    },
+    "potato_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:potato_cookie"
+          ]
+        }
+      }
+    },
+    "pancake": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:pancake"
+          ]
+        }
+      }
+    },
+    "berry_pancake": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_pancake"
+          ]
+        }
+      }
+    },
+    "honey_pancake": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:honey_pancake"
+          ]
+        }
+      }
+    },
+    "bacon_pancake": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:bacon_pancake"
+          ]
+        }
+      }
+    },
+    "creepe": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:creepe"
+          ]
+        }
+      }
+    },
+    "ice_cream": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:ice_cream"
+          ]
+        }
+      }
+    },
+    "chocolate_ice_cream": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chocolate_ice_cream"
+          ]
+        }
+      }
+    },
+    "berry_ice_cream": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_ice_cream"
+          ]
+        }
+      }
+    },
+    "neapolitan_ice_cream": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:neapolitan_ice_cream"
+          ]
+        }
+      }
+    },
+    "potato_chips": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:potato_chips"
+          ]
+        }
+      }
+    },
+    "hot_potato_chips": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:hot_potato_chips"
+          ]
+        }
+      }
+    },
+    "beet_chips": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:beet_chips"
+          ]
+        }
+      }
+    },
+    "apple_chips": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:apple_chips"
+          ]
+        }
+      }
+    },
+    "brownie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:brownie"
+          ]
+        }
+      }
+    },
+    "berry_brownie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_brownie"
+          ]
+        }
+      }
+    },
+    "honey_candy": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:honey_candy"
+          ]
+        }
+      }
+    },
+    "berry_candy": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_candy"
+          ]
+        }
+      }
+    },
+    "chocolate": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chocolate"
+          ]
+        }
+      }
+    },
+    "sword_lollipop": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:sword_lollipop"
+          ]
+        }
+      }
+    },
+    "trail_mix": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:trail_mix"
+          ]
+        }
+      }
+    },
+    "hot_chicken_drumstick": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:hot_chicken_drumstick"
+          ]
+        }
+      }
+    },
+    "fish_and_chips": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:fish_and_chips"
+          ]
+        }
+      }
+    },
+    "kebab": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:kebab"
+          ]
+        }
+      }
+    },
+    "meatloaf": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:meatloaf"
+          ]
+        }
+      }
+    },
+    "meatball": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:meatball"
+          ]
+        }
+      }
+    },
+    "spicy_meatball": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:spicy_meatball"
+          ]
+        }
+      }
+    },
+    "french_toast": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:french_toast"
+          ]
+        }
+      }
+    },
+    "potato_pancake": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:potato_pancake"
+          ]
+        }
+      }
+    },
+    "apple_soda": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:apple_soda"
+          ]
+        }
+      }
+    },
+    "berry_soda": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:berry_soda"
+          ]
+        }
+      }
+    },
+    "cactus_soda": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cactus_soda"
+          ]
+        }
+      }
+    },
+    "melon_soda": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:melon_soda"
+          ]
+        }
+      }
+    },
+    "chorus_soda": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:chorus_soda"
+          ]
+        }
+      }
+    },
+    "sea_pickle_soda": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:sea_pickle_soda"
+          ]
+        }
+      }
+    },
+    "fungus_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:fungus_stew"
+          ]
+        }
+      }
+    },
+    "root_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:root_salad"
+          ]
+        }
+      }
+    },
+    "netherite_apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:netherite_apple"
+          ]
+        }
+      }
+    },
+    "mushroom_scrambled_eggs": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:mushroom_scrambled_eggs"
+          ]
+        }
+      }
+    },
+    "pumpsicle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:pumpsicle"
+          ]
+        }
+      }
+    },
+    "pumpkin_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:pumpkin_cookie"
+          ]
+        }
+      }
+    },
+    "sunflower_seed_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:sunflower_seed_cookie"
+          ]
+        }
+      }
+    },
+    "cactus_slice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cactus_slice"
+          ]
+        }
+      }
+    },
+    "cooked_cactus_slice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cooked_cactus_slice"
+          ]
+        }
+      }
+    },
+    "glazed_glow_berries": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:glazed_glow_berries"
+          ]
+        }
+      }
+    },
+    "miners_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:miners_salad"
+          ]
+        }
+      }
+    },
+    "glow_ink_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:glow_ink_soup"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cooked_bamboo"
+    ],
+    [
+      "cooked_beetroot"
+    ],
+    [
+      "cooked_egg"
+    ],
+    [
+      "grilled_melon"
+    ],
+    [
+      "baked_apple"
+    ],
+    [
+      "stuffed_sea_pickle"
+    ],
+    [
+      "cooked_turtle_egg"
+    ],
+    [
+      "apple_juice"
+    ],
+    [
+      "berry_juice"
+    ],
+    [
+      "cactus_juice"
+    ],
+    [
+      "melon_juice"
+    ],
+    [
+      "sea_pickle_juice"
+    ],
+    [
+      "chorus_juice"
+    ],
+    [
+      "leaf_tea"
+    ],
+    [
+      "flower_tea"
+    ],
+    [
+      "chocolate_milk"
+    ],
+    [
+      "berry_milk"
+    ],
+    [
+      "milk_bottle"
+    ],
+    [
+      "cheese"
+    ],
+    [
+      "garden_soup"
+    ],
+    [
+      "pumpkin_soup"
+    ],
+    [
+      "fish_stew"
+    ],
+    [
+      "vegetable_stew"
+    ],
+    [
+      "meat_stew"
+    ],
+    [
+      "chicken_soup"
+    ],
+    [
+      "ink_soup"
+    ],
+    [
+      "bone_soup"
+    ],
+    [
+      "plain_salad"
+    ],
+    [
+      "kelp_salad"
+    ],
+    [
+      "fruit_salad"
+    ],
+    [
+      "golden_fruit_salad"
+    ],
+    [
+      "mashed_potatoes"
+    ],
+    [
+      "apple_sauce"
+    ],
+    [
+      "pudding"
+    ],
+    [
+      "chocolate_pudding"
+    ],
+    [
+      "jelly"
+    ],
+    [
+      "magma_jelly"
+    ],
+    [
+      "smoldering_stew"
+    ],
+    [
+      "apple_pie"
+    ],
+    [
+      "beetroot_pie"
+    ],
+    [
+      "berry_pie"
+    ],
+    [
+      "wart_pie"
+    ],
+    [
+      "poisonous_pie"
+    ],
+    [
+      "berry_cookie"
+    ],
+    [
+      "honey_cookie"
+    ],
+    [
+      "potato_cookie"
+    ],
+    [
+      "pancake"
+    ],
+    [
+      "berry_pancake"
+    ],
+    [
+      "honey_pancake"
+    ],
+    [
+      "bacon_pancake"
+    ],
+    [
+      "creepe"
+    ],
+    [
+      "ice_cream"
+    ],
+    [
+      "chocolate_ice_cream"
+    ],
+    [
+      "berry_ice_cream"
+    ],
+    [
+      "neapolitan_ice_cream"
+    ],
+    [
+      "potato_chips"
+    ],
+    [
+      "hot_potato_chips"
+    ],
+    [
+      "beet_chips"
+    ],
+    [
+      "apple_chips"
+    ],
+    [
+      "brownie"
+    ],
+    [
+      "berry_brownie"
+    ],
+    [
+      "honey_candy"
+    ],
+    [
+      "berry_candy"
+    ],
+    [
+      "chocolate"
+    ],
+    [
+      "sword_lollipop"
+    ],
+    [
+      "trail_mix"
+    ],
+    [
+      "hot_chicken_drumstick"
+    ],
+    [
+      "fish_and_chips"
+    ],
+    [
+      "kebab"
+    ],
+    [
+      "meatloaf"
+    ],
+    [
+      "meatball"
+    ],
+    [
+      "spicy_meatball"
+    ],
+    [
+      "french_toast"
+    ],
+    [
+      "potato_pancake"
+    ],
+    [
+      "apple_soda"
+    ],
+    [
+      "berry_soda"
+    ],
+    [
+      "cactus_soda"
+    ],
+    [
+      "melon_soda"
+    ],
+    [
+      "chorus_soda"
+    ],
+    [
+      "sea_pickle_soda"
+    ],
+    [
+      "fungus_stew"
+    ],
+    [
+      "root_salad"
+    ],
+    [
+      "netherite_apple"
+    ],
+    [
+      "mushroom_scrambled_eggs"
+    ],
+    [
+      "pumpsicle"
+    ],
+    [
+      "pumpkin_cookie"
+    ],
+    [
+      "sunflower_seed_cookie"
+    ],
+    [
+      "cactus_slice"
+    ],
+    [
+      "cooked_cactus_slice"
+    ],
+    [
+      "glazed_glow_berries"
+    ],
+    [
+      "miners_salad"
+    ],
+    [
+      "glow_ink_soup"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:root_salad"
+    ]
+  },
+  "criteria": {
+    "has_crimson_roots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:crimson_roots"
+            ]
+          }
+        ]
+      }
+    },
+    "has_warped_roots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:warped_roots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crimson_roots",
+      "has_warped_roots"
+    ]
+  ]
+}

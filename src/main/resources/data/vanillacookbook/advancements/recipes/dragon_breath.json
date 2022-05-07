@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:apple_soda",
+      "vanillacookbook:berry_soda",
+      "vanillacookbook:cactus_soda",
+      "vanillacookbook:melon_soda",
+      "vanillacookbook:sea_pickle_soda",
+      "vanillacookbook:chorus_soda"
+    ]
+  },
+  "criteria": {
+    "has_dragon_breath": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:dragon_breath"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dragon_breath"
+    ]
+  ]
+}

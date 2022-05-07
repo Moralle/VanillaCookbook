@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:baked_apple"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:apple_chips",
+    "count": 3
+  }
+}

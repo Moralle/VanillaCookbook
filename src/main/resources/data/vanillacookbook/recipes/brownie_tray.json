@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  	{
+      "item": "vanillacookbook:brownie"
+    },
+    {
+      "item": "vanillacookbook:brownie"
+    },
+    {
+      "item": "vanillacookbook:brownie"
+    },
+    {
+      "item": "vanillacookbook:brownie"
+    },
+    {
+      "item": "vanillacookbook:brownie"
+    },
+    {
+      "item": "vanillacookbook:brownie"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:brownie_tray"
+  }
+}

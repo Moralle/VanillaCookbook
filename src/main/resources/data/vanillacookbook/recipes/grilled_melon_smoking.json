@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:melon_slice"
+  },
+  "result": "vanillacookbook:grilled_melon",
+  "experience": 0.35,
+  "cookingtime": 100
+}

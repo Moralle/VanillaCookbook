@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "vanillacookbook:np_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "item": "vanillacookbook:ice_cream"
+    },
+    {
+      "item": "vanillacookbook:chocolate_ice_cream"
+    },
+    {
+      "item": "vanillacookbook:berry_ice_cream"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:neapolitan_ice_cream"
+  }
+}

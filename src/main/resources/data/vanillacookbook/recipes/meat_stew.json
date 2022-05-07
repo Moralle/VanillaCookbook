@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  	{
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "forge:raw_meat"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:meat_stew"
+  }
+}

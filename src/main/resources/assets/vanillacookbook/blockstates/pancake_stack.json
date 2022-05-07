@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "bites=0": { "model": "vanillacookbook:block/pancake_stack" },
+        "bites=1": { "model": "vanillacookbook:block/pancake_stack_slice1" },
+        "bites=2": { "model": "vanillacookbook:block/pancake_stack_slice2" },
+        "bites=3": { "model": "vanillacookbook:block/pancake_stack_slice3" },
+        "bites=4": { "model": "vanillacookbook:block/pancake_stack_slice4" }
+    }
+}

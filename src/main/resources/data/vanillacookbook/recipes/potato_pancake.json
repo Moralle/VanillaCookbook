@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [  	
+    {
+      "item": "minecraft:potato"
+    },
+  	{
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:eggs"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:potato_pancake"
+  }
+}

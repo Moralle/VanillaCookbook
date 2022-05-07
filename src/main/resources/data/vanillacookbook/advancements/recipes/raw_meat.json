@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:meatloaf",
+      "vanillacookbook:meatball",
+      "vanillacookbook:meat_stew",
+      "vanillacookbook:kebab"
+    ]
+  },
+  "criteria": {
+    "has_raw_meats": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_meat"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_meats"
+    ]
+  ]
+}

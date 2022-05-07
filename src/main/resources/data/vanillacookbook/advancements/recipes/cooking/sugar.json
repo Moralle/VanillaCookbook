@@ -1,0 +1,37 @@
+{
+	"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooking/apple_sauce",
+      "vanillacookbook:cooking/pudding",
+      "vanillacookbook:cooking/chocolate_pudding",
+      "vanillacookbook:cooking/jelly",
+      "vanillacookbook:cooking/magma_jelly"
+    ]
+  },
+  "criteria": {
+    "has_sugar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            "minecraft:sugar"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sugar"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "TTT",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "T": {
+      "tag": "forge:crops/tomato"
+    },
+    "C": {
+      "item": "vanillacookbook:cheese"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:pizza"
+  }
+}

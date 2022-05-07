@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "vanillacookbook:np_config"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "SES",
+    "WMW"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "M": {
+      "tag": "forge:milk"
+    },
+    "I": {
+      "item": "vanillacookbook:ice_cream"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:ice_cream_cake"
+  }
+}

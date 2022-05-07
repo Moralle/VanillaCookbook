@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:chocolate",
+      "vanillacookbook:chocolate_ice_cream",
+      "vanillacookbook:chocolate_cake",
+      "vanillacookbook:chocolate_pudding",
+      "vanillacookbook:chocolate_milk",
+      "vanillacookbook:brownie",
+      "vanillacookbook:berry_brownie"
+    ]
+  },
+  "criteria": {
+    "has_cocoa_beans": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:cocoa_beans"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cocoa_beans"
+    ]
+  ]
+}

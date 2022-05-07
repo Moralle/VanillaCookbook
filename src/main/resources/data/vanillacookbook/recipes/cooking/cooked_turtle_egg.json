@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:turtle_egg"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:cooked_turtle_egg"
+  }
+}

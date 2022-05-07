@@ -1,0 +1,21 @@
+{
+    "textures": {
+        "particle": "vanillacookbook:block/cheesecake_side",
+        "bottom": "vanillacookbook:block/cheesecake_bottom",
+        "top": "vanillacookbook:block/cheesecake_top",
+        "side": "vanillacookbook:block/cheesecake_side"
+    },
+    "elements": [
+        {   "from": [ 1, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

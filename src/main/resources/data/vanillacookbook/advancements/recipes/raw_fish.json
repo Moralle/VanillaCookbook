@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:fish_stew",
+      "vanillacookbook:kelp_salad"
+    ]
+  },
+  "criteria": {
+    "has_raw_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_fishes"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_fish"
+    ]
+  ]
+}

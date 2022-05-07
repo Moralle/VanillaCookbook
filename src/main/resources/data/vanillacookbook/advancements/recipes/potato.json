@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:garden_soup",
+      "vanillacookbook:potato_pancake",
+      "vanillacookbook:vegetable_stew",
+      "vanillacookbook:fish_and_chips",
+      "vanillacookbook:kebab",
+      "vanillacookbook:potato_cookie",
+      "vanillacookbook:meat_stew"
+    ]
+  },
+  "criteria": {
+    "has_potato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:potato"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_potato"
+    ]
+  ]
+}

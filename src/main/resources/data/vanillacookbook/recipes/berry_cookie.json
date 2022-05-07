@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WBW",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:berry_cookie",
+    "count": 8
+  }
+}

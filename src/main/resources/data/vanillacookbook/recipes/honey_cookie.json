@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WHW",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "H": {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:honey_cookie",
+    "count": 8
+  }
+}

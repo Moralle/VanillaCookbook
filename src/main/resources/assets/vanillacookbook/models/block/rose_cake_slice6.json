@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "vanillacookbook:block/rose_cake_side",
+        "bottom": "vanillacookbook:block/rose_cake_bottom",
+        "top": "vanillacookbook:block/rose_cake_top",
+        "side": "vanillacookbook:block/rose_cake_side",
+        "inside": "vanillacookbook:block/rose_cake_inner"
+    },
+    "elements": [
+        {   "from": [ 13, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

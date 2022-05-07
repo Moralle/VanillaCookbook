@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+        "item": "minecraft:potion",
+        "count": 1,
+        "nbt": "{Potion:\"minecraft:water\"}"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:chorus_juice"
+  }
+}

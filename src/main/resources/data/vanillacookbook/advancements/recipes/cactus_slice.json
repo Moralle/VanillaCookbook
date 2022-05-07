@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooked_cactus_slice",
+      "vanillacookbook:cooked_cactus_slice_smoking",
+      "vanillacookbook:cooked_cactus_slice_campfire"
+    ]
+  },
+  "criteria": {
+    "has_cactus_slice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"vanillacookbook:cactus_slice"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cactus_slice"
+    ]
+  ]
+}

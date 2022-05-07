@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 0.0,
+        "max": 2.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "vanillacookbook:chorus_juice"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "vanillacookbook:chorus_cake"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "vanillacookbook:chorus_soda"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "SES",
+    "WMW"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "M": {
+      "tag": "forge:milk"
+    },
+    "P": {
+      "item": "minecraft:poppy"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:mohnkuchen"
+  }
+}

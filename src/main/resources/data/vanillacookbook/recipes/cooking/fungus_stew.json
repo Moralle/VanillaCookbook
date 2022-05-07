@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "vanillacookbook:fd_config"
+    }  
+  ],
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "tag": "forge:fungi"
+    },
+    {
+      "tag": "forge:fungi"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:fungus_stew"
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

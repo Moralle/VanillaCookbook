@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:baked_apple",
+      "vanillacookbook:baked_apple_smoking",
+      "vanillacookbook:baked_apple_campfire",
+      "vanillacookbook:apple_juice",
+      "vanillacookbook:apple_pie",
+      "vanillacookbook:fruit_salad",
+      "vanillacookbook:apple_sauce"
+    ]
+  },
+  "criteria": {
+    "has_apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_apple"
+    ]
+  ]
+}

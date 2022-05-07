@@ -1,0 +1,36 @@
+{
+	"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooking/pudding",
+      "vanillacookbook:cooking/chocolate_pudding",
+      "vanillacookbook:cooking/cooked_egg",
+      "vanillacookbook:cooking/mushroom_scrambled_eggs"
+    ]
+  },
+  "criteria": {
+    "has_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            "tag": "forge:eggs"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_egg"
+    ]
+  ]
+}

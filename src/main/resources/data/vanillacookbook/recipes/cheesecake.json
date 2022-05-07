@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "SES",
+    "WWW"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "C": {
+      "item": "vanillacookbook:cheese"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:cheesecake"
+  }
+}

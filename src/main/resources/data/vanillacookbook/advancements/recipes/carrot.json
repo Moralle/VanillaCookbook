@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:garden_soup",
+      "vanillacookbook:vegetable_stew",
+      "vanillacookbook:chicken_soup",
+      "vanillacookbook:meat_stew",
+      "vanillacookbook:carrot_cake"
+    ]
+  },
+  "criteria": {
+    "has_carrot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            "minecraft:carrot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_carrot"
+    ]
+  ]
+}

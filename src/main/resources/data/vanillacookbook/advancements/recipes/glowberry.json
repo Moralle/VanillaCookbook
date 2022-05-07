@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:golden_fruit_salad",
+      "vanillacookbook:glow_berry_cake",
+      "vanillacookbook:glazed_glow_berries"
+    ]
+  },
+  "criteria": {
+    "has_glowberry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:glow_berries"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_glowberry"
+    ]
+  ]
+}

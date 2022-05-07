@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cheese",
+      "vanillacookbook:cheese_smoking",
+      "vanillacookbook:cheese_campfire",
+      "vanillacookbook:chocolate_milk",
+      "vanillacookbook:berry_milk"
+    ]
+  },
+  "criteria": {
+    "has_milk_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"vanillacookbook:milk_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_milk_bottle"
+    ]
+  ]
+}

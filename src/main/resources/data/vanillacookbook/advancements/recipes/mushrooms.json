@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:kebab",
+      "vanillacookbook:vegetable_stew",
+      "vanillacookbook:mushroom_scrambled_eggs"
+    ]
+  },
+  "criteria": {
+    "has_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:mushrooms"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mushroom"
+    ]
+  ]
+}

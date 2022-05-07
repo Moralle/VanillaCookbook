@@ -1,0 +1,80 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:flower_tea",
+      "vanillacookbook:plain_salad"
+    ]
+  },
+  "criteria": {
+    "has_dandelion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:dandelion"
+            ]
+          }
+        ]
+      }
+    },
+    "has_cornflower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:cornflower"
+            ]
+          }
+        ]
+      }
+    },
+    "has_sunflower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:sunflower"
+            ]
+          }
+        ]
+      }
+    },
+    "has_lilac": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:lilac"
+            ]
+          }
+        ]
+      }
+    },
+    "has_rose_bush": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:rose_bush"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dandelion",
+      "has_rose_bush",
+      "has_lilac",
+      "has_sunflower",
+      "has_cornflower"
+    ]
+  ]
+}

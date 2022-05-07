@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "vanillacookbook:cactus_slice"
+  },
+  "result": "vanillacookbook:cooked_cactus_slice",
+  "experience": 0.35,
+  "cookingtime": 200
+}

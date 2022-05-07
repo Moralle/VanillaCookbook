@@ -1,0 +1,56 @@
+{
+	"textures": {
+		"0": "vanillacookbook:block/brownie_bottom",
+		"1": "vanillacookbook:block/brownie_side",
+		"3": "vanillacookbook:block/brownie_top",
+		"particle": "vanillacookbook:block/brownie_bottom"
+	},
+	"elements": [
+		{
+			"from": [9, 0, 11],
+			"to": [15, 3, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [18, 8, 20]},
+			"faces": {
+				"north": {"uv": [5, 13, 11, 16], "texture": "#1"},
+				"east": {"uv": [2, 13, 6, 16], "texture": "#1"},
+				"south": {"uv": [8, 13, 14, 16], "texture": "#1"},
+				"west": {"uv": [10, 13, 14, 16], "texture": "#1"},
+				"up": {"uv": [8, 10, 14, 14], "texture": "#3"},
+				"down": {"uv": [8, 2, 14, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [9, 0, 6],
+			"to": [15, 3, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [18, 8, 15]},
+			"faces": {
+				"north": {"uv": [5, 13, 11, 16], "texture": "#1"},
+				"east": {"uv": [6, 13, 10, 16], "texture": "#1"},
+				"south": {"uv": [5, 13, 11, 16], "texture": "#1"},
+				"west": {"uv": [6, 13, 10, 16], "texture": "#1"},
+				"up": {"uv": [8, 6, 14, 10], "texture": "#3"},
+				"down": {"uv": [8, 6, 14, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [9, 0, 1],
+			"to": [15, 3, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [18, 8, 10]},
+			"faces": {
+				"north": {"uv": [2, 13, 8, 16], "texture": "#1"},
+				"east": {"uv": [10, 13, 14, 16], "texture": "#1"},
+				"south": {"uv": [5, 13, 11, 16], "texture": "#1"},
+				"west": {"uv": [2, 13, 6, 16], "texture": "#1"},
+				"up": {"uv": [8, 2, 14, 6], "texture": "#3"},
+				"down": {"uv": [8, 10, 14, 14], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [10, 8, 10],
+			"children": [0, 1, 2]
+		}
+	]
+}

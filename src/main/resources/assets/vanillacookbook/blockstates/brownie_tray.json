@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "bites=0": { "model": "vanillacookbook:block/brownie_tray" },
+        "bites=1": { "model": "vanillacookbook:block/brownie_tray_slice1" },
+        "bites=2": { "model": "vanillacookbook:block/brownie_tray_slice2" },
+        "bites=3": { "model": "vanillacookbook:block/brownie_tray_slice3" },
+        "bites=4": { "model": "vanillacookbook:block/brownie_tray_slice4" },
+        "bites=5": { "model": "vanillacookbook:block/brownie_tray_slice5" }
+    }
+}

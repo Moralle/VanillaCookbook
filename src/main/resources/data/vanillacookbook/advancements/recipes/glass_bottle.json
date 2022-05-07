@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:apple_juice",
+      "vanillacookbook:berry_juice",
+      "vanillacookbook:cactus_juice",
+      "vanillacookbook:melon_juice",
+      "vanillacookbook:sea_pickle_juice",
+      "vanillacookbook:birch_tea",
+      "vanillacookbook:spruce_tea",
+      "vanillacookbook:flower_tea"
+    ]
+  },
+  "criteria": {
+    "has_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:glass_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bottle"
+    ]
+  ]
+}

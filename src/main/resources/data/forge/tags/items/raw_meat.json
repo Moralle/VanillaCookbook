@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:raw_beef",
+    "#forge:raw_chicken",
+    "#forge:raw_mutton",
+    "#forge:raw_pork",
+	"minecraft:rabbit",
+  	    { "id": "dropthemeat:raw_bat", "required": false },
+  	    { "id": "dropthemeat:raw_bear", "required": false },
+  	    { "id": "dropthemeat:raw_bee", "required": false },
+  	    { "id": "dropthemeat:raw_cat", "required": false },
+  	    { "id": "dropthemeat:raw_dolphin", "required": false },
+  	    { "id": "dropthemeat:raw_fox", "required": false },
+  	    { "id": "dropthemeat:raw_horse", "required": false },
+  	    { "id": "dropthemeat:raw_llama", "required": false },
+  	    { "id": "dropthemeat:raw_parrot", "required": false },
+  	    { "id": "dropthemeat:raw_squid", "required": false },
+  	    { "id": "dropthemeat:raw_turtle", "required": false },
+  	    { "id": "dropthemeat:raw_villager", "required": false },
+  	    { "id": "dropthemeat:raw_wolf", "required": false },
+  	    { "id": "dropthemeat:raw_iron_golem", "required": false },
+  	    { "id": "dropthemeat:piglin_porkchop", "required": false },
+		{ "id": "dropthemeat:raw_axolotl", "required": false },
+		{ "id": "dropthemeat:raw_goat", "required": false },
+		{ "id": "quark:crab_leg", "required": false },
+		{ "id": "quark:frog_leg", "required": false },
+		{ "id": "aquaculture:frog_legs_raw", "required": false },
+		{ "id": "exoticbirds:raw_birdmeat", "required": false }
+    ]
+}

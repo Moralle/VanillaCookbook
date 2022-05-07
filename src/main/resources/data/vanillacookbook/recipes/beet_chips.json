@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:cooked_beetroot"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:beet_chips",
+    "count": 2
+  }
+}

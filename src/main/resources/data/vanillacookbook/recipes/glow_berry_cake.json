@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "SES",
+    "WMW"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "tag": "forge:crops/wheat"
+    },
+    "M": {
+      "tag": "forge:milk"
+    },
+    "G": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "result": {
+    "item": "vanillacookbook:glow_berry_cake"
+  }
+}

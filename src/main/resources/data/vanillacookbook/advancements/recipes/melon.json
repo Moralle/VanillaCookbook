@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:grilled_melon",
+      "vanillacookbook:grilled_melon_smoking",
+      "vanillacookbook:grilled_melon_campfire",
+      "vanillacookbook:melon_juice",
+      "vanillacookbook:fruit_salad",
+      "vanillacookbook:golden_fruit_salad"
+    ]
+  },
+  "criteria": {
+    "has_melon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:melon_slice"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_melon"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:milk_bottle",
+      "vanillacookbook:pudding",
+      "vanillacookbook:pancake",
+      "vanillacookbook:mashed_potatoes"
+    ]
+  },
+  "criteria": {
+    "has_milk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"tag": "forge:milk"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_milk"
+    ]
+  ]
+}

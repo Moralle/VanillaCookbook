@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sea_pickle"
+    },
+    {
+      "item": "vanillacookbook:cheese"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:stuffed_sea_pickle"
+  }
+}

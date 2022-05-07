@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:honey_cookie",
+      "vanillacookbook:honey_pancake",
+      "vanillacookbook:honey_candy",
+      "vanillacookbook:sword_lollipop"
+    ]
+  },
+  "criteria": {
+    "has_honey": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:honey_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_honey"
+    ]
+  ]
+}

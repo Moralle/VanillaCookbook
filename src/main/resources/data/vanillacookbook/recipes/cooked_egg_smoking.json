@@ -1,0 +1,14 @@
+{
+  "conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": "vanillacookbook:cooked_egg",
+  "experience": 0.35,
+  "cookingtime": 100
+}

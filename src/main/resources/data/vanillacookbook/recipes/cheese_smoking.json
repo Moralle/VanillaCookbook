@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "vanillacookbook:milk_bottle"
+  },
+  "result": "vanillacookbook:cheese",
+  "experience": 0.35,
+  "cookingtime": 100
+}

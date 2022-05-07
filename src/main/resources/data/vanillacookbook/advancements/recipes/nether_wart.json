@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:wart_pie",
+      "vanillacookbook:smoldering_stew"
+    ]
+  },
+  "criteria": {
+    "has_nether_warts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:nether_wart"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_nether_warts"
+    ]
+  ]
+}

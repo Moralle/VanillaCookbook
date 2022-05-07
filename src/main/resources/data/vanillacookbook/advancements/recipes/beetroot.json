@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooked_beetroot",
+      "vanillacookbook:cooked_beetroot_smoking",
+      "vanillacookbook:cooked_beetroot_campfire",
+      "vanillacookbook:garden_soup",
+      "vanillacookbook:vegetable_stew",
+      "vanillacookbook:beetroot_pie"
+    ]
+  },
+  "criteria": {
+    "has_beetroot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:beetroot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_beetroot"
+    ]
+  ]
+}

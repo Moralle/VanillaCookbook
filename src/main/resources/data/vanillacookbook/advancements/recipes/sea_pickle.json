@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:stuffed_sea_pickle",
+      "vanillacookbook:sea_pickle_juice"
+    ]
+  },
+  "criteria": {
+    "has_sea_pickle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:sea_pickle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sea_pickle"
+    ]
+  ]
+}

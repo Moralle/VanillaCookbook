@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  	{
+      "item": "vanillacookbook:pancake"
+    },
+    {
+      "item": "vanillacookbook:pancake"
+    },
+    {
+      "item": "vanillacookbook:pancake"
+    },
+    {
+      "item": "vanillacookbook:pancake"
+    },
+    {
+      "item": "vanillacookbook:pancake"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:pancake_stack"
+  }
+}

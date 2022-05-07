@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 4.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 9,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 0.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "vanillacookbook:netherite_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "vanillacookbook:netherite_apple"
+        }
+      ]
+    }
+  ]
+}

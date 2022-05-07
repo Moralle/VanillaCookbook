@@ -1,0 +1,36 @@
+{
+	"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooking/chicken_soup",
+      "vanillacookbook:cooking/garden_soup",
+      "vanillacookbook:cooking/meat_stew",
+      "vanillacookbook:cooking/vegetable_stew"
+    ]
+  },
+  "criteria": {
+    "has_carrot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            "minecraft:carrot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_carrot"
+    ]
+  ]
+}

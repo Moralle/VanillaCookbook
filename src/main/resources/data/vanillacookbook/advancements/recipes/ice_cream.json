@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:neapolitan_ice_cream",
+      "vanillacookbook:ice_cream_cake"
+    ]
+  },
+  "criteria": {
+    "has_ice_cream": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"vanillacookbook:ice_cream"
+            ]
+          }
+        ]
+      }
+    },
+    "has_chocolate_ice_cream": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"vanillacookbook:chocolate_ice_cream"
+            ]
+          }
+        ]
+      }
+    },
+    "has_berry_ice_cream": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"vanillacookbook:berry_ice_cream"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ice_cream",
+      "has_chocolate_ice_cream",
+      "has_berry_ice_cream"
+    ]
+  ]
+}
