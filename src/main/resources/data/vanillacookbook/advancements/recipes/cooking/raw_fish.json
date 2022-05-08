@@ -17,9 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-            "forge:raw_fishes"
-            ]
+            "tag": "forge:raw_fishes"
           }
         ]
       }

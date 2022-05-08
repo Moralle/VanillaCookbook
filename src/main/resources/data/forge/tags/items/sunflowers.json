@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sunflower",
+  	    { "id": "abundance:sunflower_seeds", "required": false }
+  	]
+}

@@ -10,7 +10,7 @@
       "tag": "forge:crops/wheat"
     },
     "S": {
-      "item": "minecraft:sunflower"
+      "tag": "forge:sunflowers"
     }
   },
   "result": {

@@ -3,23 +3,25 @@ modLoader="javafml" #mandatory
 
 loaderVersion="[40,)" #mandatory
 
-license="All rights reserved"
+license="https://github.com/Moralle/VanillaCookbook/blob/main/LICENCE"
 
-issueTrackerURL="http://my.issue.tracker/" #optional
+issueTrackerURL="https://github.com/Moralle/VanillaCookbook/issues" #optional
 
 [[mods]] #mandatory
 
 modId="vanillacookbook" #mandatory
 
-version="1.13" #mandatory
+version="2.0.0" #mandatory
 
 displayName="Vanilla Cookbook" #mandatory
 
 # updateJSONURL="" #optional
 
-displayURL="" #optional
+displayURL="https://github.com/Moralle/VanillaCookbook" #optional
 
 logoFile="vanilla_cookbook.png" #optional
+
+logoBlur=false
 
 itemIcon="vanillacookbook:book_cake"
 

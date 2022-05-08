@@ -14,9 +14,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-            	"tag": "forge:milk"
-            ]
+            "tag": "forge:milk"
           }
         ]
       }
