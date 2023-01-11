@@ -17,7 +17,7 @@ public class CheeseBottleEvent {
 	
 	@SubscribeEvent
     public static void onCheeseRetrieval(PlayerEvent.ItemSmeltedEvent event) {
-		Player player = event.getPlayer();
+		Player player = event.getEntity();
 		ItemStack output = event.getSmelting();
 		
 		if (output.getItem() == ItemRegistry.CHEESE.get() && !Config.CHEESE_SMELTING.get()) {
