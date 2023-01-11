@@ -20,7 +20,7 @@ public class NPConfigCondition implements ICondition {
 	}
 	
 	@Override
-	public boolean test() {
+	public boolean test(ICondition.IContext context) {
 		return !Config.NP_ITEMS.get();
 	}
 	

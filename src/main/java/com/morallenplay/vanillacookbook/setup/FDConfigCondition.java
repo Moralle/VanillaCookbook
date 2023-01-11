@@ -21,7 +21,7 @@ public class FDConfigCondition implements ICondition {
 	}
 	
 	@Override
-	public boolean test() {
+	public boolean test(ICondition.IContext context) {
 		return !Config.FD_ITEMS.get();
 	}
 	
