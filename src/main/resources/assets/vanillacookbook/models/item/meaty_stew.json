@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures":{
-		"layer0": "vanillacookbook:item/meat_stew"
+		"layer0": "vanillacookbook:item/meaty_stew"
 		}
 }

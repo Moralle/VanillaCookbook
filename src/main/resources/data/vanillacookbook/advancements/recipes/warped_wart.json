@@ -2,18 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "vanillacookbook:meaty_stew",
       "vanillacookbook:warped_gummy"
     ]
   },
   "criteria": {
-    "has_bone": {
+    "has_warped_wart": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-            	"minecraft:bone"
+            	"minecraft:warped_wart_block"
             ]
           }
         ]
@@ -22,7 +21,7 @@
   },
   "requirements": [
     [
-      "has_bone"
+      "has_warped_wart"
     ]
   ]
 }

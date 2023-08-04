@@ -1,12 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "vanillacookbook:set_remainder",
   "ingredients": [
     {
       "item": "vanillacookbook:chorus_juice"
     },
     {
       "item": "minecraft:dragon_breath"
-    },
+    }
+  ],
+  "contained": [
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "containers": [
     {
       "item": "minecraft:glass_bottle"
     }

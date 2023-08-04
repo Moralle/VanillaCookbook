@@ -249,12 +249,12 @@
         }
       }
     },
-    "meat_stew": {
+    "meaty_stew": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "items": [
-          	"vanillacookbook:meat_stew"
+          	"vanillacookbook:meaty_stew"
           ]
         }
       }
@@ -275,16 +275,6 @@
         "item": {
           "items": [
           	"vanillacookbook:ink_soup"
-          ]
-        }
-      }
-    },
-    "bone_soup": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-          	"vanillacookbook:bone_soup"
           ]
         }
       }
@@ -938,6 +928,26 @@
           ]
         }
       }
+    },
+    "warped_gummy": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:warped_gummy"
+          ]
+        }
+      }
+    },
+    "snow_horn": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:snow_horn"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -1011,16 +1021,13 @@
       "vegetable_stew"
     ],
     [
-      "meat_stew"
+      "meaty_stew"
     ],
     [
       "chicken_soup"
     ],
     [
       "ink_soup"
-    ],
-    [
-      "bone_soup"
     ],
     [
       "plain_salad"
@@ -1216,6 +1223,12 @@
     ],
     [
       "glow_ink_soup"
+    ],
+    [
+      "warped_gummy"
+    ],
+    [
+      "snow_horn"
     ]
   ]
 }

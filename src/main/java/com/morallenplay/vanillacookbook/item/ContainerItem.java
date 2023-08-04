@@ -20,7 +20,7 @@ public class ContainerItem extends Item {
 			this.affectPlayer(stack, worldIn, entityLiving);
 		}
 
-		ItemStack containerStack = stack.getContainerItem();
+		ItemStack containerStack = stack.getCraftingRemainingItem();
 
 		super.finishUsingItem(stack, worldIn, entityLiving);
 		if (entityLiving instanceof ServerPlayer) {

@@ -1,0 +1,52 @@
+{
+  "type": "vanillacookbook:set_remainder",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    [
+      {"item": "minecraft:milk_bucket"},
+      {"item": "vanillacookbook:milk_bottle"}
+    ],
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "minecraft:goat_horn"
+    }
+  ],
+  "contained": [
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "vanillacookbook:milk_bottle"
+    },
+    {
+      "item": "minecraft:goat_horn"
+    }
+  ],
+  "containers": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:carrot_on_a_stick"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:snow_horn"
+  }
+}

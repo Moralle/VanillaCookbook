@@ -1,6 +1,5 @@
-  
-{
-  "type": "minecraft:crafting_shapeless",
+  {
+  "type": "vanillacookbook:set_remainder",
   "ingredients": [
     {
       "item": "vanillacookbook:milk_bottle"
@@ -10,10 +9,13 @@
     },
     {
       "item": "minecraft:cocoa_beans"
-    },
-    {
-      "item": "minecraft:glass_bottle"
     }
+  ],
+  "contained": [
+    
+  ],
+  "containers": [
+    
   ],
   "result": {
     "item": "vanillacookbook:chocolate_milk"

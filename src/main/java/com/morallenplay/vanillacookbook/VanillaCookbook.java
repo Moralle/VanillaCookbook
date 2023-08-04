@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import com.morallenplay.vanillacookbook.registry.BlockRegistry;
 import com.morallenplay.vanillacookbook.registry.CompostChances;
 import com.morallenplay.vanillacookbook.registry.ItemRegistry;
+import com.morallenplay.vanillacookbook.registry.RecipeRegistry;
 import com.morallenplay.vanillacookbook.setup.Config;
 import com.morallenplay.vanillacookbook.setup.FDConfigCondition;
 import com.morallenplay.vanillacookbook.setup.NPConfigCondition;
@@ -45,6 +46,8 @@ public class VanillaCookbook
     	
     	CraftingHelper.register(new FDConfigCondition.Serializer());
     	CraftingHelper.register(new NPConfigCondition.Serializer());
+    	
+    	RecipeRegistry.RECIPE_SERIALIZERS.register(modEventBus);
     	
     	instance = this;
        

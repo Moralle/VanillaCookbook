@@ -2,18 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "vanillacookbook:meaty_stew",
-      "vanillacookbook:warped_gummy"
+      "vanillacookbook:snow_horn"
     ]
   },
   "criteria": {
-    "has_bone": {
+    "has_powder_snow": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-            	"minecraft:bone"
+            	"minecraft:powder_snow_bucket"
             ]
           }
         ]
@@ -22,7 +21,7 @@
   },
   "requirements": [
     [
-      "has_bone"
+      "has_powder_snow"
     ]
   ]
 }

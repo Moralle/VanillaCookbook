@@ -4,7 +4,7 @@
     "recipes": [
       "vanillacookbook:meatloaf",
       "vanillacookbook:meatball",
-      "vanillacookbook:meat_stew",
+      "vanillacookbook:meaty_stew",
       "vanillacookbook:kebab"
     ]
   },

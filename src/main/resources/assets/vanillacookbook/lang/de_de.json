@@ -18,7 +18,6 @@
 	"item.vanillacookbook.vegetable_stew": "Gem\u00fcseeintopf",
 	"item.vanillacookbook.chicken_soup": "H\u00fchnersuppe",
 	"item.vanillacookbook.ink_soup": "Tintensuppe",
-	"item.vanillacookbook.bone_soup": "Knochensuppe",
 	"item.vanillacookbook.plain_salad": "Simpler Salat",
 	"item.vanillacookbook.kelp_salad": "Seetangsalat",
 	"item.vanillacookbook.fruit_salad": "Obstsalat",
@@ -59,7 +58,7 @@
 	"item.vanillacookbook.cactus_soda": "Kaktusschorle",
 	"item.vanillacookbook.melon_soda": "Melonenschorle",
 	"item.vanillacookbook.berry_candy": "Beerenbonbon",
-	"item.vanillacookbook.meat_stew": "Fleischeintopf",
+	"item.vanillacookbook.meaty_stew": "Fleischeintopf",
 	"item.vanillacookbook.meatloaf": "Hackbraten",
 	"item.vanillacookbook.meatball": "Fleischb\u00e4llchen",
 	"item.vanillacookbook.spicy_meatball": "Scharfes Fleischb\u00e4llchen",
@@ -94,6 +93,8 @@
 	"item.vanillacookbook.glazed_glow_berries": "Glasierte Leuchtbeeren",
 	"item.vanillacookbook.miners_salad": "Bergbauer Salat",
 	"item.vanillacookbook.glow_ink_soup": "Leuchttintensuppe",
+	"item.vanillacookbook.warped_gummy": "Wirrgummi",
+	"item.vanillacookbook.snow_horn": "Schneeh\u00f6rnchen",
 	
 	"item.vanillacookbook.the_sludge": "Pampe",
 	

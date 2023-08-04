@@ -4,7 +4,8 @@
     "recipes": [
       "vanillacookbook:pudding",
       "vanillacookbook:pancake",
-      "vanillacookbook:sword_lollipop"
+      "vanillacookbook:sword_lollipop",
+      "vanillacookbook:warped_gummy"
     ]
   },
   "criteria": {

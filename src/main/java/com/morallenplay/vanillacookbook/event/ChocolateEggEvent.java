@@ -22,8 +22,8 @@ public class ChocolateEggEvent {
 	
 	@SubscribeEvent
 	public static void onEggUse(PlayerInteractEvent.RightClickBlock event) {
-        Player player = event.getPlayer();
-        Level world = event.getWorld();
+        Player player = event.getEntity();
+        Level world = event.getLevel();
         Block block = world.getBlockState(event.getPos()).getBlock();
         ItemStack heldItemStack = event.getItemStack();
 		if (heldItemStack.is(Tags.EASTER_EGG_ITEMS) && block == Blocks.DRAGON_EGG && !player.isShiftKeyDown() && !world.isClientSide) {

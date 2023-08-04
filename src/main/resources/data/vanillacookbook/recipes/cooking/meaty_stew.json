@@ -17,14 +17,17 @@
       {"item": "minecraft:rabbit"}
     ],
     {
-      "item": "minecraft:potato"
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
     },
     {
       "item": "minecraft:carrot"
     }
   ],
   "result": {
-    "item": "vanillacookbook:meat_stew"
+    "item": "vanillacookbook:meaty_stew"
   },
   "container": {
     "item": "minecraft:bowl"

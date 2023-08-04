@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures":{
-		"layer0": "vanillacookbook:item/bone_soup"
+		"layer0": "vanillacookbook:item/snow_horn"
 		}
 }

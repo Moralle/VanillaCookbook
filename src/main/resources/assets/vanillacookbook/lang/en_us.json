@@ -18,7 +18,6 @@
 	"item.vanillacookbook.vegetable_stew": "Vegetable Stew",
 	"item.vanillacookbook.chicken_soup": "Chicken Soup",
 	"item.vanillacookbook.ink_soup": "Ink Soup",
-	"item.vanillacookbook.bone_soup": "Bone Soup",
 	"item.vanillacookbook.plain_salad": "Plain Salad",
 	"item.vanillacookbook.kelp_salad": "Kelp Salad",
 	"item.vanillacookbook.fruit_salad": "Fruit Salad",
@@ -59,7 +58,7 @@
 	"item.vanillacookbook.cactus_soda": "Cactus Soda",
 	"item.vanillacookbook.melon_soda": "Melon Soda",
 	"item.vanillacookbook.berry_candy": "Berry Candy",
-	"item.vanillacookbook.meat_stew": "Meat Stew",
+	"item.vanillacookbook.meaty_stew": "Meaty Stew",
 	"item.vanillacookbook.meatloaf": "Meatloaf",
 	"item.vanillacookbook.meatball": "Meatball",
 	"item.vanillacookbook.spicy_meatball": "Spicy Meatball",
@@ -94,6 +93,8 @@
 	"item.vanillacookbook.glazed_glow_berries": "Glazed Glow Berries",
 	"item.vanillacookbook.miners_salad": "Miner\u0027s Salad",
 	"item.vanillacookbook.glow_ink_soup": "Glow Ink Soup",
+	"item.vanillacookbook.warped_gummy": "Warped Gummy",
+	"item.vanillacookbook.snow_horn": "Snow Horn",
 	
 	"item.vanillacookbook.the_sludge": "The Sludge",
 	

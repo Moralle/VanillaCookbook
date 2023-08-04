@@ -2,18 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "vanillacookbook:meaty_stew",
-      "vanillacookbook:warped_gummy"
+      "vanillacookbook:miners_salad"
     ]
   },
   "criteria": {
-    "has_bone": {
+    "has_moss": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-            	"minecraft:bone"
+            	"minecraft:moss_block"
             ]
           }
         ]
@@ -22,7 +21,7 @@
   },
   "requirements": [
     [
-      "has_bone"
+      "has_moss"
     ]
   ]
 }
