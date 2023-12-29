@@ -68,7 +68,7 @@ public class ChorusCakeBlock extends CakeBlock {
 		for (int i = 0; i < 1000; ++i) {
 			BlockPos blockpos = pos.offset(world.random.nextInt(8) - world.random.nextInt(8),
 					world.random.nextInt(8) - world.random.nextInt(8), world.random.nextInt(8) - world.random.nextInt(8));
-			if (world.getBlockState(blockpos).isAir() && world.getBlockState(blockpos.below()).getMaterial().isSolid() && world.getBlockState(blockpos.below()).getBlock() != BlockRegistry.CHORUS_CAKE.get()) {
+			if (world.getBlockState(blockpos).isAir() && world.getBlockState(blockpos.below()).isSolid() && world.getBlockState(blockpos.below()).getBlock() != BlockRegistry.CHORUS_CAKE.get()) {
 				if (state.getValue(BITES) == 6) {
 					world.removeBlock(pos, false);
 				} else if (player.canEat(false)) {

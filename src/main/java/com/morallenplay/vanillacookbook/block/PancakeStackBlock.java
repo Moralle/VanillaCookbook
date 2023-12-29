@@ -113,7 +113,7 @@ public class PancakeStackBlock extends Block {
 	}
 
 	public boolean canSurvive(BlockState state, LevelReader worldIn, BlockPos pos) {
-		return worldIn.getBlockState(pos.below()).getMaterial().isSolid();
+		return worldIn.getBlockState(pos.below()).isSolid();
 	}
 
 	public boolean hasAnalogOutputSignal(BlockState state) {
