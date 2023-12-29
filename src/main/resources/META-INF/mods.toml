@@ -1,7 +1,7 @@
 
 modLoader="javafml" #mandatory
 
-loaderVersion="[43,)" #mandatory
+loaderVersion="[47,)" #mandatory
 
 license="https://github.com/Moralle/VanillaCookbook/blob/main/LICENCE"
 
@@ -38,13 +38,13 @@ A mod expanding food while staying close to vanilla Minecraft.
 [[dependencies.vanillacookbook]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[43,)" #mandatory
+    versionRange="[47,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.vanillacookbook]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.20)"
+    versionRange="[1.20.1,)"
     ordering="NONE"
     side="BOTH"
