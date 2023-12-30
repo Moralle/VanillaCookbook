@@ -11,7 +11,11 @@ import com.morallenplay.vanillacookbook.setup.Config;
 import com.morallenplay.vanillacookbook.setup.FDConfigCondition;
 import com.morallenplay.vanillacookbook.setup.NPConfigCondition;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
@@ -24,6 +28,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 @SuppressWarnings("unused")
 @Mod("vanillacookbook")
@@ -31,7 +37,16 @@ public class VanillaCookbook
 {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "vanillacookbook";
-    public static final CreativeModeTab ITEM_GROUP = new VCItemGroup(VanillaCookbook.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
+    public static final RegistryObject<CreativeModeTab> TabItems = TABS.register("items", () -> CreativeModeTab.builder()
+        .title(Component.translatable("itemGroup.vanillacookbook"))
+        .icon(() -> ItemRegistry.BOOK_CAKE.get().getDefaultInstance())
+        .displayItems((params, output) -> {
+            for (RegistryObject<Item> item : ItemRegistry.getItemMap().values()) {
+                output.accept(item.get().getDefaultInstance());
+            }
+        }).withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+        .build());
     public static VanillaCookbook instance;
 
     public VanillaCookbook() {
@@ -39,6 +54,7 @@ public class VanillaCookbook
     	modEventBus.addListener(this::setup);
     	modEventBus.addListener(this::doClientStuff);
     	
+    	TABS.register(modEventBus);
     	ItemRegistry.ITEMS.register(modEventBus);
     	BlockRegistry.BLOCKS.register(modEventBus);
     	
@@ -67,16 +83,4 @@ public class VanillaCookbook
     public void onServerStarting(ServerStartingEvent event) {
     	
     }
-    
-    public static class VCItemGroup extends CreativeModeTab {
-
-		public VCItemGroup(String label) {
-			super(label);
-		}
-
-		@Override
-		public ItemStack makeIcon() {
-			return ItemRegistry.BOOK_CAKE.get().getDefaultInstance();
-		}
-	}
 }
