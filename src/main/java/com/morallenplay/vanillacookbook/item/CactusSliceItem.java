@@ -22,7 +22,7 @@ public class CactusSliceItem extends Item{
 	public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
 		
 		if (!worldIn.isClientSide && (new Random().nextFloat() < chance)) {
-			entityLiving.hurt(DamageSource.GENERIC, damage);
+			entityLiving.hurt(worldIn.damageSources().cactus(), damage);
 	      }
 		
 		ItemStack itemstack = super.finishUsingItem(stack, worldIn, entityLiving);
