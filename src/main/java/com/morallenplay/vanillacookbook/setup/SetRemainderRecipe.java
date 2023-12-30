@@ -6,6 +6,7 @@ import com.google.gson.JsonParseException;
 
 import it.unimi.dsi.fastutil.ints.IntList;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
@@ -13,6 +14,7 @@ import net.minecraft.world.entity.player.StackedContents;
 import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -67,7 +69,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	}
 
 	@Override
-	public ItemStack assemble(CraftingContainer c) {
+	public ItemStack assemble(CraftingContainer c, RegistryAccess access) {
 		return this.result.copy();
 	}
 
@@ -77,7 +79,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	}
 
 	@Override
-	public ItemStack getResultItem() {
+	public ItemStack getResultItem(RegistryAccess access) {
 		return this.result;
 	}
 	
@@ -105,9 +107,9 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	         
 	         for (int j = 0; j < contained.size(); ++j) {
 	        	 
-	        	 if(contained.get(j).sameItem(item)) {
+	        	if(ItemStack.isSameItem(contained.get(j), item)) {
 	        		 
-	        	 	if (remainder.get(j).sameItem(Items.CARROT_ON_A_STICK.getDefaultInstance())) {
+	        	 	if (ItemStack.isSameItem(remainder.get(j), Items.CARROT_ON_A_STICK.getDefaultInstance())) {
 	        	 		ItemStack itemstack = item.copy();
 	                    itemstack.setCount(1);
 	                    nonnulllist.set(i, itemstack);
@@ -214,4 +216,9 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	      }
 	   }
 
+	@Override
+	public CraftingBookCategory category()
+	{
+		return CraftingBookCategory.MISC;
+	}
 }
