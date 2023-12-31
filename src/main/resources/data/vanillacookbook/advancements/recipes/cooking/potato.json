@@ -10,7 +10,6 @@
     "recipes": [
       "vanillacookbook:cooking/garden_soup",
       "vanillacookbook:cooking/mashed_potatoes",
-      "vanillacookbook:cooking/meat_stew",
       "vanillacookbook:cooking/vegetable_stew"
     ]
   },

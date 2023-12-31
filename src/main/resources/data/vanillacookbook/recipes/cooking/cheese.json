@@ -6,11 +6,14 @@
     }
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
   "ingredients": [
     {
       "tag": "forge:milk/milk_bottle"
     }
   ],
+  "recipe_book_tab": "misc",
   "result": {
     "item": "vanillacookbook:cheese"
   }

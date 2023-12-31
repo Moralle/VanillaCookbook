@@ -9,6 +9,8 @@
     }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "item": "minecraft:pumpkin"
@@ -20,6 +22,7 @@
       "item": "minecraft:pumpkin_seeds"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:pumpkin_soup"
   },

@@ -9,6 +9,8 @@
     }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:raw_fishes"
@@ -17,6 +19,7 @@
       "tag": "forge:raw_fishes"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:fish_stew"
   },

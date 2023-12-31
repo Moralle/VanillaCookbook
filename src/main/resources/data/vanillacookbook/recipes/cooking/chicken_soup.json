@@ -9,6 +9,8 @@
     }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:raw_chicken"
@@ -20,6 +22,7 @@
       "item": "minecraft:carrot"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:chicken_soup"
   },

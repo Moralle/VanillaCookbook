@@ -3,19 +3,15 @@
     {
       "type": "forge:mod_loaded",
       "modid": "farmersdelight"
-    },
-    {
-      "type": "vanillacookbook:fd_config"
-    }  
+    }
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
-    [
-      {"tag": "forge:raw_chicken"},
-      {"tag": "forge:raw_mutton"},
-      {"tag": "forge:raw_pork"},
-      {"item": "minecraft:rabbit"}
-    ],
+    {
+      "tag": "forge:raw_meat"
+    },
     {
       "item": "minecraft:bone"
     },
@@ -26,6 +22,7 @@
       "item": "minecraft:carrot"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:meaty_stew"
   },

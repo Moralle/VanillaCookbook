@@ -3,9 +3,14 @@
     {
       "type": "forge:mod_loaded",
       "modid": "farmersdelight"
-    }
+    },
+    {
+      "type": "vanillacookbook:fd_config"
+    }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "item": "minecraft:carrot"
@@ -17,6 +22,7 @@
       "item": "minecraft:beetroot"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:garden_soup"
   },

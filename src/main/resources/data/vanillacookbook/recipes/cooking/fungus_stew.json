@@ -9,6 +9,8 @@
     }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:fungi"
@@ -17,6 +19,7 @@
       "tag": "forge:fungi"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:fungus_stew"
   },

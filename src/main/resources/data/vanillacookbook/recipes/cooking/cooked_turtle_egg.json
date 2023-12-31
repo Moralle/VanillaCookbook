@@ -6,11 +6,14 @@
     }
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
   "ingredients": [
     {
       "item": "minecraft:turtle_egg"
     }
   ],
+  "recipe_book_tab": "misc",
   "result": {
     "item": "vanillacookbook:cooked_turtle_egg"
   }

@@ -6,6 +6,8 @@
     }
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:mushrooms"
@@ -20,6 +22,7 @@
       "tag": "forge:milk"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:mushroom_scrambled_eggs"
   },

@@ -10,7 +10,7 @@
     "recipes": [
       "vanillacookbook:cooking/chicken_soup",
       "vanillacookbook:cooking/garden_soup",
-      "vanillacookbook:cooking/meat_stew",
+      "vanillacookbook:cooking/meaty_stew",
       "vanillacookbook:cooking/vegetable_stew"
     ]
   },

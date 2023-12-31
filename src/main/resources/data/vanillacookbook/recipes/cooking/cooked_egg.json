@@ -9,11 +9,14 @@
     }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
   "ingredients": [
     {
       "item": "minecraft:egg"
     }
   ],
+  "recipe_book_tab": "misc",
   "result": {
     "item": "vanillacookbook:cooked_egg"
   }

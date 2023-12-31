@@ -6,6 +6,8 @@
     }
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
   "ingredients": [
     {
       "item": "minecraft:apple"
@@ -17,6 +19,7 @@
       "item": "minecraft:sugar"
     }
   ],
+  "recipe_book_tab": "misc",
   "result": {
     "item": "vanillacookbook:apple_sauce"
   },

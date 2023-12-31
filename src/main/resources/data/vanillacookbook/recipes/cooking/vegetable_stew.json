@@ -9,6 +9,8 @@
     }  
   ],
   "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
   "ingredients": [
     {
       "item": "minecraft:carrot"
@@ -31,6 +33,7 @@
       "item": "minecraft:kelp"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "vanillacookbook:vegetable_stew"
   },

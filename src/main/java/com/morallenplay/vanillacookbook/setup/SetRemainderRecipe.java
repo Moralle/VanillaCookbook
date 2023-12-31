@@ -172,20 +172,22 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	      public SetRemainderRecipe fromNetwork(ResourceLocation location, FriendlyByteBuf bytebuf) {
 	         String s = bytebuf.readUtf();
 	         int i = bytebuf.readVarInt();
+	         int j = bytebuf.readVarInt();
+	         int k = bytebuf.readVarInt();
 	         NonNullList<Ingredient> nonnulllist = NonNullList.withSize(i, Ingredient.EMPTY);
-	         NonNullList<ItemStack> contained = NonNullList.withSize(i, ItemStack.EMPTY);
-	         NonNullList<ItemStack> containers = NonNullList.withSize(i, ItemStack.EMPTY);
+	         NonNullList<ItemStack> contained = NonNullList.withSize(j, ItemStack.EMPTY);
+	         NonNullList<ItemStack> containers = NonNullList.withSize(k, ItemStack.EMPTY);
 
-	         for(int j = 0; j < nonnulllist.size(); ++j) {
-	            nonnulllist.set(j, Ingredient.fromNetwork(bytebuf));
+	         for(int l = 0; l < nonnulllist.size(); ++l) {
+	            nonnulllist.set(l, Ingredient.fromNetwork(bytebuf));
 	         }
 	         
-	         for(int k = 0; k < contained.size(); ++k) {
-	        	 contained.set(k, bytebuf.readItem());
+	         for(int m = 0; m < contained.size(); ++m) {
+	        	 contained.set(m, bytebuf.readItem());
 		     }
 	         
-	         for(int k = 0; k < containers.size(); ++k) {
-	        	 containers.set(k, bytebuf.readItem());
+	         for(int n = 0; n < containers.size(); ++n) {
+	        	 containers.set(n, bytebuf.readItem());
 		     }
 
 	         ItemStack itemstack = bytebuf.readItem();
