@@ -3,6 +3,7 @@ package com.morallenplay.vanillacookbook.setup;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
+import com.morallenplay.vanillacookbook.registry.RecipeRegistry;
 
 import it.unimi.dsi.fastutil.ints.IntList;
 import net.minecraft.core.NonNullList;
@@ -22,7 +23,7 @@ import net.minecraft.world.level.Level;
 
 public class SetRemainderRecipe implements CraftingRecipe {
 	
-	public static final RecipeSerializer<SetRemainderRecipe> SERIALIZER = new SetRemainderRecipe.Serializer();
+	//public static final RecipeSerializer<SetRemainderRecipe> SERIALIZER = new SetRemainderRecipe.Serializer();
 	
 	private final ResourceLocation id;
 	final String group;
@@ -124,7 +125,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return SERIALIZER;
+		return RecipeRegistry.SET_REMAINDER_RECIPE.get();
 	}
 	
 	@SuppressWarnings("unused")
