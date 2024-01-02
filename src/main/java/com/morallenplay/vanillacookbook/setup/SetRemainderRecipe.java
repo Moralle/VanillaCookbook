@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.StackedContents;
 import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -27,15 +28,17 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	
 	private final ResourceLocation id;
 	final String group;
+	final CraftingBookCategory category;
 	final ItemStack result;
 	final NonNullList<Ingredient> ingredients;
 	final NonNullList<ItemStack> contained;
 	final NonNullList<ItemStack> remainder;
 	private final boolean isSimple;
 	   
-	   public SetRemainderRecipe(ResourceLocation location, String group, ItemStack output, NonNullList<Ingredient> ingredient, NonNullList<ItemStack> contained, NonNullList<ItemStack> container) {
+	   public SetRemainderRecipe(ResourceLocation location, String group, CraftingBookCategory category, ItemStack output, NonNullList<Ingredient> ingredient, NonNullList<ItemStack> contained, NonNullList<ItemStack> container) {
 		   this.id = location;
 		   this.group = group;
+		   this.category = category;
 		   this.result = output;
 		   this.ingredients = ingredient;
 		   this.contained = contained;
@@ -97,6 +100,10 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	      return this.group;
 	}
 	
+	public CraftingBookCategory category() {
+	      return this.category;
+	   }
+	
 	@Override
 	public NonNullList<ItemStack> getRemainingItems(CraftingContainer container) {
 	      NonNullList<ItemStack> nonnulllist = NonNullList.withSize(container.getContainerSize(), ItemStack.EMPTY);
@@ -131,8 +138,10 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	@SuppressWarnings("unused")
 	public static class Serializer implements RecipeSerializer<SetRemainderRecipe> {
 	      private static final ResourceLocation NAME = new ResourceLocation("minecraft", "crafting_shapeless");
-	      public SetRemainderRecipe fromJson(ResourceLocation location, JsonObject object) {
+	      @SuppressWarnings("deprecation")
+		public SetRemainderRecipe fromJson(ResourceLocation location, JsonObject object) {
 	         String s = GsonHelper.getAsString(object, "group", "");
+	         CraftingBookCategory craftingbookcategory = CraftingBookCategory.CODEC.byName(GsonHelper.getAsString(object, "category", (String)null), CraftingBookCategory.MISC);
 	         NonNullList<Ingredient> nonnulllist = itemsFromJson(GsonHelper.getAsJsonArray(object, "ingredients"));
 	         NonNullList<ItemStack> contained = containItemFromJson(GsonHelper.getAsJsonArray(object, "contained"));
 	         NonNullList<ItemStack> containers = containItemFromJson(GsonHelper.getAsJsonArray(object, "containers"));
@@ -140,7 +149,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	            throw new JsonParseException("No ingredients for shapeless recipe");
 	         } else {
 	            ItemStack itemstack = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(object, "result"));
-	            return new SetRemainderRecipe(location, s, itemstack, nonnulllist, contained, containers);
+	            return new SetRemainderRecipe(location, s, craftingbookcategory, itemstack, nonnulllist, contained, containers);
 	         }
 	      }
 
@@ -172,6 +181,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 
 	      public SetRemainderRecipe fromNetwork(ResourceLocation location, FriendlyByteBuf bytebuf) {
 	         String s = bytebuf.readUtf();
+	         CraftingBookCategory craftingbookcategory = bytebuf.readEnum(CraftingBookCategory.class);
 	         int i = bytebuf.readVarInt();
 	         int j = bytebuf.readVarInt();
 	         int k = bytebuf.readVarInt();
@@ -192,11 +202,12 @@ public class SetRemainderRecipe implements CraftingRecipe {
 		     }
 
 	         ItemStack itemstack = bytebuf.readItem();
-	         return new SetRemainderRecipe(location, s, itemstack, nonnulllist, contained, containers);
+	         return new SetRemainderRecipe(location, s, craftingbookcategory, itemstack, nonnulllist, contained, containers);
 	      }
 
 	      public void toNetwork(FriendlyByteBuf bytebuf, SetRemainderRecipe recipe) {
 	         bytebuf.writeUtf(recipe.group);
+	         bytebuf.writeEnum(recipe.category);
 	         bytebuf.writeVarInt(recipe.ingredients.size());
 	         bytebuf.writeVarInt(recipe.contained.size());
 	         bytebuf.writeVarInt(recipe.remainder.size());

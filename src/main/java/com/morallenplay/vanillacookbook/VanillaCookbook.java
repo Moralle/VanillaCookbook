@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.morallenplay.vanillacookbook.registry.BlockRegistry;
 import com.morallenplay.vanillacookbook.registry.CompostChances;
+import com.morallenplay.vanillacookbook.registry.CreativeTabRegistry;
 import com.morallenplay.vanillacookbook.registry.ItemRegistry;
 import com.morallenplay.vanillacookbook.registry.RecipeRegistry;
 import com.morallenplay.vanillacookbook.setup.Config;
@@ -31,7 +32,7 @@ public class VanillaCookbook
 {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "vanillacookbook";
-    public static final CreativeModeTab ITEM_GROUP = new VCItemGroup(VanillaCookbook.MOD_ID);
+    //public static final CreativeModeTab ITEM_GROUP = new VCItemGroup(VanillaCookbook.MOD_ID);
     public static VanillaCookbook instance;
 
     public VanillaCookbook() {
@@ -48,6 +49,8 @@ public class VanillaCookbook
     	CraftingHelper.register(new NPConfigCondition.Serializer());
     	
     	RecipeRegistry.RECIPE_SERIALIZERS.register(modEventBus);
+    	
+//    	CreativeTabRegistry.CREATIVE_TABS.register(modEventBus);
     	
     	instance = this;
        
@@ -68,15 +71,15 @@ public class VanillaCookbook
     	
     }
     
-    public static class VCItemGroup extends CreativeModeTab {
-
-		public VCItemGroup(String label) {
-			super(label);
-		}
-
-		@Override
-		public ItemStack makeIcon() {
-			return ItemRegistry.BOOK_CAKE.get().getDefaultInstance();
-		}
-	}
+//    public static class VCItemGroup extends CreativeModeTab {
+//
+//		public VCItemGroup(String label) {
+//			super(label);
+//		}
+//
+//		@Override
+//		public ItemStack makeIcon() {
+//			return ItemRegistry.BOOK_CAKE.get().getDefaultInstance();
+//		}
+//	}
 }

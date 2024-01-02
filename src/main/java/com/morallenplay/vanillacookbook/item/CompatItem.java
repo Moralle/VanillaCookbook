@@ -13,15 +13,15 @@ public class CompatItem extends Item {
 		this.modid = id;
 	}
 
-	@Override
-	public void fillItemCategory(CreativeModeTab group, NonNullList<ItemStack> items) {
-
-		if (allowedIn(group)) {
-			if (ModList.get().isLoaded(modid)) {
-				items.add(new ItemStack(this));
-			} else {
-				items.remove(new ItemStack(this));
-			}
-		}
-	}
+//	@Override
+//	public void fillItemCategory(CreativeModeTab group, NonNullList<ItemStack> items) {
+//
+//		if (allowedIn(group)) {
+//			if (ModList.get().isLoaded(modid)) {
+//				items.add(new ItemStack(this));
+//			} else {
+//				items.remove(new ItemStack(this));
+//			}
+//		}
+//	}
 }
