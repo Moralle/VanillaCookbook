@@ -7,6 +7,7 @@ import com.morallenplay.vanillacookbook.registry.RecipeRegistry;
 
 import it.unimi.dsi.fastutil.ints.IntList;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
@@ -71,7 +72,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	}
 
 	@Override
-	public ItemStack assemble(CraftingContainer c) {
+	public ItemStack assemble(CraftingContainer c, RegistryAccess a) {
 		return this.result.copy();
 	}
 
@@ -81,7 +82,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	}
 
 	@Override
-	public ItemStack getResultItem() {
+	public ItemStack getResultItem(RegistryAccess a) {
 		return this.result;
 	}
 	

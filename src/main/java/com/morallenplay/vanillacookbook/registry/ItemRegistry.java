@@ -4,9 +4,6 @@ import com.morallenplay.vanillacookbook.VanillaCookbook;
 import com.morallenplay.vanillacookbook.item.CactusSliceItem;
 import com.morallenplay.vanillacookbook.item.CheeseItem;
 import com.morallenplay.vanillacookbook.item.ChorusJuiceItem;
-import com.morallenplay.vanillacookbook.item.CompatCheeseItem;
-import com.morallenplay.vanillacookbook.item.CompatChorusItem;
-import com.morallenplay.vanillacookbook.item.CompatItem;
 import com.morallenplay.vanillacookbook.item.CureItem;
 import com.morallenplay.vanillacookbook.item.IceCreamItem;
 import com.morallenplay.vanillacookbook.item.JuiceItem;
@@ -126,17 +123,17 @@ public class ItemRegistry {
 	
 	public static final RegistryObject<Item> THE_SLUDGE = ITEMS.register("the_sludge", () -> new SludgeItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).saturationMod(0F).alwaysEat().build())));
 	
-	public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.8F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> BERRY_CAKE_SLICE = ITEMS.register("berry_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CARROT_CAKE_SLICE = ITEMS.register("carrot_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CHEESECAKE_SLICE = ITEMS.register("cheesecake_slice", () -> new CompatCheeseItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CHOCOLATE_CAKE_SLICE = ITEMS.register("chocolate_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> MOHNKUCHEN_SLICE = ITEMS.register("mohnkuchen_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> ICE_CREAM_CAKE_SLICE = ITEMS.register("ice_cream_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> ROSE_CAKE_SLICE = ITEMS.register("rose_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CHORUS_CAKE_SLICE = ITEMS.register("chorus_cake_slice", () -> new CompatChorusItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> BOOK_CAKE_SLICE = ITEMS.register("book_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> GLOW_BERRY_CAKE_SLICE = ITEMS.register("glow_berry_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
+	public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.8F).build())));
+	public static final RegistryObject<Item> BERRY_CAKE_SLICE = ITEMS.register("berry_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> CARROT_CAKE_SLICE = ITEMS.register("carrot_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> CHEESECAKE_SLICE = ITEMS.register("cheesecake_slice", () -> new CheeseItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> CHOCOLATE_CAKE_SLICE = ITEMS.register("chocolate_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> MOHNKUCHEN_SLICE = ITEMS.register("mohnkuchen_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> ICE_CREAM_CAKE_SLICE = ITEMS.register("ice_cream_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> ROSE_CAKE_SLICE = ITEMS.register("rose_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> CHORUS_CAKE_SLICE = ITEMS.register("chorus_cake_slice", () -> new ChorusJuiceItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> BOOK_CAKE_SLICE = ITEMS.register("book_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
+	public static final RegistryObject<Item> GLOW_BERRY_CAKE_SLICE = ITEMS.register("glow_berry_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
 	
 	public static final RegistryObject<Item> BERRY_CAKE = ITEMS.register("berry_cake", () -> (new BlockItem(BlockRegistry.BERRY_CAKE.get(), (new Item.Properties()).stacksTo(1))));
 	public static final RegistryObject<Item> CARROT_CAKE = ITEMS.register("carrot_cake", () -> (new BlockItem(BlockRegistry.CARROT_CAKE.get(), (new Item.Properties()).stacksTo(1))));
