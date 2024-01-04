@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '[6.0,6.2)', changing: true
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -36,6 +36,7 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
+			forceExit false
 
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
@@ -52,6 +53,7 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
+			forceExit false
 
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
@@ -68,6 +70,7 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
+			forceExit false
 
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
