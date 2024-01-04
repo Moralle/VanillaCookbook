@@ -114,9 +114,9 @@ public class SetRemainderRecipe implements CraftingRecipe {
 	         
 	         for (int j = 0; j < contained.size(); ++j) {
 	        	 
-	        	 if(contained.get(j).sameItem(item)) {
+	        	 if(contained.get(j).is(item.getItem())) {
 	        		 
-	        	 	if (remainder.get(j).sameItem(Items.CARROT_ON_A_STICK.getDefaultInstance())) {
+	        	 	if (remainder.get(j).is(Items.CARROT_ON_A_STICK.getDefaultInstance().getItem())) {
 	        	 		ItemStack itemstack = item.copy();
 	                    itemstack.setCount(1);
 	                    nonnulllist.set(i, itemstack);

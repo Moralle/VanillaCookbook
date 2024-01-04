@@ -112,8 +112,9 @@ public class PancakeStackBlock extends Block {
 				: super.updateShape(stateIn, facing, facingState, worldIn, currentPos, facingPos);
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean canSurvive(BlockState state, LevelReader worldIn, BlockPos pos) {
-		return worldIn.getBlockState(pos.below()).getMaterial().isSolid();
+		return worldIn.getBlockState(pos.below()).isSolid();
 	}
 
 	public boolean hasAnalogOutputSignal(BlockState state) {
