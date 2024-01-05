@@ -21,6 +21,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -131,17 +132,17 @@ public class ItemRegistry {
 	
 	public static final RegistryObject<Item> THE_SLUDGE = ITEMS.register("the_sludge", () -> new SludgeItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).saturationMod(0F).alwaysEat().build())));
 	
-	public static final RegistryObject<Item> PIZZA = registerItem("pizza", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.8F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> BERRY_CAKE_SLICE = registerItem("berry_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CARROT_CAKE_SLICE = registerItem("carrot_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CHEESECAKE_SLICE = registerItem("cheesecake_slice", () -> new CompatCheeseItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CHOCOLATE_CAKE_SLICE = registerItem("chocolate_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> MOHNKUCHEN_SLICE = registerItem("mohnkuchen_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> ICE_CREAM_CAKE_SLICE = registerItem("ice_cream_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> ROSE_CAKE_SLICE = registerItem("rose_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> CHORUS_CAKE_SLICE = registerItem("chorus_cake_slice", () -> new CompatChorusItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> BOOK_CAKE_SLICE = registerItem("book_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
-	public static final RegistryObject<Item> GLOW_BERRY_CAKE_SLICE = registerItem("glow_berry_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"));
+	public static final RegistryObject<Item> PIZZA = registerCompatItem("pizza", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.8F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> BERRY_CAKE_SLICE = registerCompatItem("berry_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> CARROT_CAKE_SLICE = registerCompatItem("carrot_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> CHEESECAKE_SLICE = registerCompatItem("cheesecake_slice", () -> new CompatCheeseItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> CHOCOLATE_CAKE_SLICE = registerCompatItem("chocolate_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> MOHNKUCHEN_SLICE = registerCompatItem("mohnkuchen_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> ICE_CREAM_CAKE_SLICE = registerCompatItem("ice_cream_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> ROSE_CAKE_SLICE = registerCompatItem("rose_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> CHORUS_CAKE_SLICE = registerCompatItem("chorus_cake_slice", () -> new CompatChorusItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> BOOK_CAKE_SLICE = registerCompatItem("book_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
+	public static final RegistryObject<Item> GLOW_BERRY_CAKE_SLICE = registerCompatItem("glow_berry_cake_slice", () -> new CompatItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build()), "farmersdelight"), "farmersdelight");
 	
 	public static final RegistryObject<Item> BERRY_CAKE = registerItem("berry_cake", () -> (new BlockItem(BlockRegistry.BERRY_CAKE.get(), (new Item.Properties()).stacksTo(1))));
 	public static final RegistryObject<Item> CARROT_CAKE = registerItem("carrot_cake", () -> (new BlockItem(BlockRegistry.CARROT_CAKE.get(), (new Item.Properties()).stacksTo(1))));
@@ -161,6 +162,14 @@ public class ItemRegistry {
 		itemMap.put(name, newItem);
 
 		return newItem;
+	}
+
+	private static RegistryObject<Item> registerCompatItem(String name, Supplier<Item> item, String mod) {
+		if (!ModList.get().isLoaded(mod)) {
+			return null;
+		}
+
+		return registerItem(name, item);
 	}
 
 	public static Map<String, RegistryObject<Item>> getItemMap() {
