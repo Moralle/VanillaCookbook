@@ -14,15 +14,7 @@ public class CompatChorusItem extends ChorusFruitItem {
 		this.modid = id;
 	}
 
-	@Override
-	public void fillItemCategory(CreativeModeTab group, NonNullList<ItemStack> items) {
-
-		if (allowedIn(group)) {
-			if (ModList.get().isLoaded(modid)) {
-				items.add(new ItemStack(this));
-			} else {
-				items.remove(new ItemStack(this));
-			}
-		}
+	public String getModid() {
+		return modid;
 	}
 }
