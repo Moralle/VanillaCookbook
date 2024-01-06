@@ -948,6 +948,36 @@
           ]
         }
       }
+    },
+    "pitcher_praline": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:pitcher_praline"
+          ]
+        }
+      }
+    },
+    "cooked_sniffer_egg": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cooked_sniffer_egg"
+          ]
+        }
+      }
+    },
+    "cherry_blossom_tea": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:cherry_blossom_tea"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -1229,6 +1259,15 @@
     ],
     [
       "snow_horn"
+    ],
+    [
+      "pitcher_praline"
+    ],
+    [
+      "cooked_sniffer_egg"
+    ],
+    [
+      "cherry_blossom_tea"
     ]
   ]
 }

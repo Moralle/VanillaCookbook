@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:sniffer_egg"
+  },
+  "result": "vanillacookbook:cooked_sniffer_egg",
+  "experience": 0.35,
+  "cookingtime": 200
+}

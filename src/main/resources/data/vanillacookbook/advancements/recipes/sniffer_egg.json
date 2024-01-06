@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cooked_sniffer_egg",
+      "vanillacookbook:cooked_sniffer_egg_smoker",
+      "vanillacookbook:cooked_sniffer_egg_campfire"
+    ]
+  },
+  "criteria": {
+    "has_sniffer_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:sniffer_egg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sniffer_egg"
+    ]
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:hot_chicken_drumstick",
+      "vanillacookbook:hot_potato_chips",
+      "vanillacookbook:spicy_meatball"
+    ]
+  },
+  "criteria": {
+    "has_blaze_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:blaze_powder"
+            ]
+          }
+        ]
+      }
+    },
+    "has_torchflower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:torchflower"
+            ]
+          }
+        ]
+      }
+    },
+    "has_torchflower_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:torchflower_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blaze_powder",
+      "has_torchflower",
+      "has_torchflower_seeds"
+    ]
+  ]
+}

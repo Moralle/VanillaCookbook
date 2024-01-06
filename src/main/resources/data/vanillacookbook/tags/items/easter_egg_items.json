@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillacookbook:chocolate"
+    "vanillacookbook:chocolate",
+    "create:bar_of_chocolate"
   ]
 }
