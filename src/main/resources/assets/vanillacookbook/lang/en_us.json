@@ -113,6 +113,12 @@
 	"item.vanillacookbook.rose_cake_slice": "Rose Cake Slice",
 	"item.vanillacookbook.glow_berry_cake_slice": "Glow Berry Cake Slice",
 	
+	"item.vanillacookbook.rose_rock_candy": "Rose Rock Candy",
+	"item.vanillacookbook.polished_rose_rock_candy": "Polished Rose Rock Candy",
+	
+	"item.vanillacookbook.mana_roll": "Mana Roll",
+	"item.vanillacookbook.tater_puffs": "Tater Puffs",
+	
 	"block.vanillacookbook.berry_cake": "Berry Cake",
 	"block.vanillacookbook.carrot_cake": "Carrot Cake",
 	"block.vanillacookbook.cheesecake": "Cheesecake",

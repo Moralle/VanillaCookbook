@@ -113,6 +113,12 @@
 	"item.vanillacookbook.rose_cake_slice": "Rosenkuchenst\u00fcck",
 	"item.vanillacookbook.glow_berry_cake_slice": "Leuchtbeerenkuchenst\u00fcck",
 	
+	"item.vanillacookbook.rose_rock_candy": "Rosa Zuckerkristall",
+	"item.vanillacookbook.polished_rose_rock_candy": "Polierter Rose Zuckerkristall",
+	
+	"item.vanillacookbook.mana_roll": "Mana Rolle",
+	"item.vanillacookbook.tater_puffs": "Tater Puffs",
+	
 	"block.vanillacookbook.berry_cake": "Beerenkuchen",
 	"block.vanillacookbook.carrot_cake": "Karottenkuchen",
 	"block.vanillacookbook.cheesecake": "K\u00e4sekuchen",

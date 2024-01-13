@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  	{
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "item": "botania:mana_powder"
+    },
+    {
+      "tag": "forge:eggs"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "vanillacookbook:cheese"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:mana_roll",
+    "count": 2
+  }
+}

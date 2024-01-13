@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:rose_rock_candy"
+    }
+  ],
+  "results": [
+    {
+      "item": "vanillacookbook:polished_rose_rock_candy"
+    }
+  ]
+}

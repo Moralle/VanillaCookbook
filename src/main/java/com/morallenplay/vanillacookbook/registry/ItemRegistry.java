@@ -138,6 +138,12 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> BOOK_CAKE_SLICE = ITEMS.register("book_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
 	public static final RegistryObject<Item> GLOW_BERRY_CAKE_SLICE = ITEMS.register("glow_berry_cake_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build())));
 	
+	public static final RegistryObject<Item> ROSE_ROCK_CANDY = ITEMS.register("rose_rock_candy", () -> new CureItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.3F).build()), MobEffects.POISON, 1.0F));
+	public static final RegistryObject<Item> POLISHED_ROSE_ROCK_CANDY = ITEMS.register("polished_rose_rock_candy", () -> new CureItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.32F).effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0), 1F).alwaysEat().build()), MobEffects.POISON, 1.0F));
+	
+	public static final RegistryObject<Item> MANA_ROLL = ITEMS.register("mana_roll", () -> new CheeseItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.54F).build())));
+	public static final RegistryObject<Item> TATER_PUFFS = ITEMS.register("tater_puffs", () -> new CureItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).fast().effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 2, 5), 0.5F).alwaysEat().build()), MobEffects.HUNGER, 0.75F));
+	
 	public static final RegistryObject<Item> BERRY_CAKE = ITEMS.register("berry_cake", () -> (new BlockItem(BlockRegistry.BERRY_CAKE.get(), (new Item.Properties()).stacksTo(1))));
 	public static final RegistryObject<Item> CARROT_CAKE = ITEMS.register("carrot_cake", () -> (new BlockItem(BlockRegistry.CARROT_CAKE.get(), (new Item.Properties()).stacksTo(1))));
 	public static final RegistryObject<Item> CHEESECAKE = ITEMS.register("cheesecake", () -> (new BlockItem(BlockRegistry.CHEESECAKE.get(), (new Item.Properties()).stacksTo(1))));

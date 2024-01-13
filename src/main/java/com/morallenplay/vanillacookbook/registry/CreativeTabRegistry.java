@@ -15,7 +15,7 @@ public class CreativeTabRegistry {
 	
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VanillaCookbook.MOD_ID);
 	
-	public static final RegistryObject<CreativeModeTab> TAB_FARMERS_DELIGHT = CREATIVE_TABS.register(VanillaCookbook.MOD_ID,
+	public static final RegistryObject<CreativeModeTab> TAB_VANILLA_COOKBOOK = CREATIVE_TABS.register(VanillaCookbook.MOD_ID,
 			() -> CreativeModeTab.builder()
 					.title(Component.translatable("itemGroup.vanillacookbook"))
 				    .icon(() -> new ItemStack(ItemRegistry.BOOK_CAKE.get()))
@@ -130,6 +130,16 @@ public class CreativeTabRegistry {
 				    		output.accept(ItemRegistry.CHORUS_JUICE.get());
 				    		output.accept(ItemRegistry.BOOK_CAKE_SLICE.get());
 				    		output.accept(ItemRegistry.GLOW_BERRY_CAKE_SLICE.get());
+				    	}
+				    	
+				    	if (ModList.get().isLoaded("create")) {
+				    		output.accept(ItemRegistry.ROSE_ROCK_CANDY.get());
+				    		output.accept(ItemRegistry.POLISHED_ROSE_ROCK_CANDY.get());
+				    	}
+				    	
+				    	if (ModList.get().isLoaded("botania")) {
+				    		output.accept(ItemRegistry.MANA_ROLL.get());
+				    		output.accept(ItemRegistry.TATER_PUFFS.get());
 				    	}
 				    	
 				    	output.accept(ItemRegistry.BERRY_CAKE.get());
