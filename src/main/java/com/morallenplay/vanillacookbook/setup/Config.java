@@ -5,9 +5,11 @@ import net.minecraftforge.common.ForgeConfigSpec;
 public class Config {
 	
 	public static ForgeConfigSpec COMMON_CONFIG;
+	public static ForgeConfigSpec CLIENT_CONFIG;
 	
 	public static final String CATEGORY_COMPAT = "compat";
 	public static final String CATEGORY_FEATURES = "features";
+	public static final String CATEGORY_CLIENT = "client";
 	
 	public static ForgeConfigSpec.BooleanValue FD_ITEMS;
 	public static ForgeConfigSpec.BooleanValue NP_ITEMS;
@@ -15,6 +17,8 @@ public class Config {
 	public static ForgeConfigSpec.BooleanValue LOOT_GENERATION;
 	public static ForgeConfigSpec.BooleanValue CHORUS_CAKE_TELEPORTATION;
 	public static ForgeConfigSpec.BooleanValue CHEESE_SMELTING;
+	public static ForgeConfigSpec.BooleanValue FOOD_EFFECT_TOOLTIPS;
+	public static ForgeConfigSpec.BooleanValue FOOD_SPECIAL_TOOLTIPS;
 	
 	static {
 		ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
@@ -33,6 +37,19 @@ public class Config {
 		COMMON_BUILDER.pop();
 		
 		COMMON_CONFIG = COMMON_BUILDER.build();
+		
+		ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
+		
+		CLIENT_BUILDER.comment("Client settings").push(CATEGORY_CLIENT);
+		
+		FOOD_EFFECT_TOOLTIPS = CLIENT_BUILDER.comment("Should items display tooltips describing their (potion) effects? (Default: true)")
+				.define("foodEffectTooltips", true);
+		FOOD_SPECIAL_TOOLTIPS = CLIENT_BUILDER.comment("Should items display tooltips describing other effects (i.e. cheese curing all potion effects)? (Default: true)")
+				.define("foodSpecialTooltips", true);
+		
+		CLIENT_BUILDER.pop();
+
+		CLIENT_CONFIG = CLIENT_BUILDER.build();
 	}
 	
 //	@SubscribeEvent

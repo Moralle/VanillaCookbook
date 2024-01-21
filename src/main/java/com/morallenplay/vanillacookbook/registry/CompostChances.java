@@ -46,9 +46,21 @@ public class CompostChances {
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.ICE_CREAM_CAKE.get(), 1F);
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.ROSE_CAKE.get(), 1F);
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.BOOK_CAKE.get(), 1F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.BERRY_CAKE_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.CARROT_CAKE_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.CHEESECAKE_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.CHOCOLATE_CAKE_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.MOHNKUCHEN_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.ICE_CREAM_CAKE_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.ROSE_CAKE_SLICE.get(), 0.85F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.BOOK_CAKE_SLICE.get(), 0.85F);
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.PANCAKE_STACK.get(), 1F);
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.BROWNIE_TRAY.get(), 1F);
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.STUFFED_SEA_PICKLE.get(), 0.85F);
 		ComposterBlock.COMPOSTABLES.put(ItemRegistry.CHORUS_CAKE.get(), 1F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.COOKED_SNIFFER_EGG.get(), 1F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.PIZZA.get(), 1F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.MANA_ROLL.get(), 1F);
+		ComposterBlock.COMPOSTABLES.put(ItemRegistry.TATER_PUFFS.get(), 0.85F);
 	}
 }

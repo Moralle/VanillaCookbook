@@ -12,6 +12,14 @@ public class JuiceItem extends ContainerItem{
 		super(properties);
 	}
 	
+	public JuiceItem(Properties properties, boolean hasFoodEffectTooltip) {
+		super(properties, hasFoodEffectTooltip, false);
+	}
+
+	public JuiceItem(Properties properties, boolean hasFoodEffectTooltip, boolean hasCustomTooltip) {
+		super(properties, hasFoodEffectTooltip, hasCustomTooltip);
+	}
+	
 	public UseAnim getUseAnimation(ItemStack stack) {
 		return UseAnim.DRINK;
 	}

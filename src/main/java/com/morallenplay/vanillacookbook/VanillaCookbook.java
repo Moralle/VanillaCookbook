@@ -46,6 +46,7 @@ public class VanillaCookbook
     	BlockRegistry.BLOCKS.register(modEventBus);
     	
     	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_CONFIG);
+    	ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
     	
     	CraftingHelper.register(new FDConfigCondition.Serializer());
     	CraftingHelper.register(new NPConfigCondition.Serializer());

@@ -9,6 +9,14 @@ public class MilkBottleItem extends JuiceItem {
 	public MilkBottleItem(Properties properties) {
 		super(properties);
 	}
+	
+	public MilkBottleItem(Properties properties, boolean hasFoodEffectTooltip) {
+		super(properties, hasFoodEffectTooltip, false);
+	}
+
+	public MilkBottleItem(Properties properties, boolean hasFoodEffectTooltip, boolean hasCustomTooltip) {
+		super(properties, hasFoodEffectTooltip, hasCustomTooltip);
+	}
 
 	public void affectPlayer(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
 		entityLiving.removeAllEffects();

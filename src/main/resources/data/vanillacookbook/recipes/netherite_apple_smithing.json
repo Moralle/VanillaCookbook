@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:golden_apple"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
+  "base": {
+    "item": "minecraft:golden_apple"
+  },
   "result": {
     "item": "vanillacookbook:netherite_apple"
+  },
+  "template": {
+    "item": "minecraft:paper"
   }
 }

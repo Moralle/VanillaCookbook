@@ -13,7 +13,19 @@ public class CureItem extends ContainerItem {
 	private float chance;
 
 	public CureItem(Properties properties, MobEffect effect, float chance) {
-		super(properties);
+		super(properties, false, false);
+		this.effect = effect;
+		this.chance = chance;
+	}
+	
+	public CureItem(Properties properties, MobEffect effect, float chance, boolean hasFoodEffectTooltip) {
+		super(properties, hasFoodEffectTooltip, false);
+		this.effect = effect;
+		this.chance = chance;
+	}
+	
+	public CureItem(Properties properties, MobEffect effect, float chance, boolean hasFoodEffectTooltip, boolean hasCustomTooltip) {
+		super(properties, hasFoodEffectTooltip, hasCustomTooltip);
 		this.effect = effect;
 		this.chance = chance;
 	}

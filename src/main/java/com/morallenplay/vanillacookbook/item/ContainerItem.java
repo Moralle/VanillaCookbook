@@ -4,14 +4,21 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class ContainerItem extends Item {
+public class ContainerItem extends TooltipItem {
 
 	public ContainerItem(Properties properties) {
-		super(properties);
+		super(properties, false, false);
+	}
+	
+	public ContainerItem(Properties properties, boolean hasFoodEffectTooltip) {
+		super(properties, hasFoodEffectTooltip, false);
+	}
+
+	public ContainerItem(Properties properties, boolean hasFoodEffectTooltip, boolean hasCustomTooltip) {
+		super(properties, hasFoodEffectTooltip, hasCustomTooltip);
 	}
 
 	@Override
