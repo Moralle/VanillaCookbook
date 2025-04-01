@@ -98,6 +98,7 @@
 	"item.vanillacookbook.cooked_sniffer_egg": "Gekochtes Schn\u00fcfflerei",
 	"item.vanillacookbook.pitcher_praline": "Kannenpflanzenpraline",
 	"item.vanillacookbook.cherry_blossom_tea": "Kirschbl\u00fctentee",
+	"item.vanillacookbook.sweet_skewer": "S\u00fcﬂspieﬂ",
 	
 	"item.vanillacookbook.the_sludge": "Pampe",
 	
@@ -142,7 +143,7 @@
 	"vanillacookbook.tooltip.snow_horn": "L\u00f6scht Verbrennung",
 	"vanillacookbook.tooltip.potato_chips": "50% Chance Hunger zu L\u00f6schen",
 	"vanillacookbook.tooltip.hot_potato_chips": "50% Chance Hunger zu L\u00f6schen",
-	"vanillacookbook.tooltip.beetroot_chips": "50% Chance Hunger zu L\u00f6schen",
+	"vanillacookbook.tooltip.beet_chips": "50% Chance Hunger zu L\u00f6schen",
 	"vanillacookbook.tooltip.apple_chips": "50% Chance Hunger zu L\u00f6schen",
 	"vanillacookbook.tooltip.honey_candy": "30% Chance Hunger zu L\u00f6schen",
 	"vanillacookbook.tooltip.berry_candy": "30% Chance Hunger zu L\u00f6schen",
@@ -150,6 +151,7 @@
 	"vanillacookbook.tooltip.chocolate": "30% Chance Hunger zu L\u00f6schen",
 	"vanillacookbook.tooltip.pitcher_praline": "L\u00f6scht Abbaul\u00e4hmung",
 	"vanillacookbook.tooltip.stuffed_sea_pickle": "L\u00f6scht Alle Effekte",
+	"vanillacookbook.tooltip.sculky_cheese": "L\u00f6scht Alle Effekte & S\u00e4ttigt 1 Hunger und 2 S\u00e4ttigung Mehr Per 6 XP Levels",
 	"vanillacookbook.tooltip.milk_bottle": "L\u00f6scht Alle Effekte",
 	"vanillacookbook.tooltip.chocolate_milk": "L\u00f6scht Alle Effekte",
 	"vanillacookbook.tooltip.berry_milk": "L\u00f6scht Alle Effekte",
@@ -158,6 +160,7 @@
 	"vanillacookbook.tooltip.polished_rose_rock_candy": "L\u00f6scht Vergiftung",
 	"vanillacookbook.tooltip.mana_roll": "L\u00f6scht Alle Effekte",
 	"vanillacookbook.tooltip.tater_puffs": "50% Chance 1 Herz zu Heilen",
+	"vanillacookbook.tooltip.the_sludge": "Entfernt Hunger und S\u00e4ttigung",
 	
 	"advancements.more_balanced_diet.title": "Ausgewogenere Ern\u00e4hrung",
 	"advancements.more_balanced_diet.description": "Iss alles Essbare... schon wieder!",

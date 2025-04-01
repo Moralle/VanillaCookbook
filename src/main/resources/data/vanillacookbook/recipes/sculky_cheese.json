@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sculk_vein"
+    },
+	{
+      "item": "minecraft:sculk_vein"
+    },
+	{
+      "item": "minecraft:sculk_vein"
+    },
+    {
+      "item": "vanillacookbook:cheese"
+    }
+  ],
+  "result": {
+    "item": "vanillacookbook:sculky_cheese"
+  }
+}

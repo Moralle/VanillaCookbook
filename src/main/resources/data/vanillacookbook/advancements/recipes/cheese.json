@@ -3,7 +3,8 @@
   "rewards": {
     "recipes": [
       "vanillacookbook:cheesecake",
-      "vanillacookbook:stuffed_sea_pickle"
+      "vanillacookbook:stuffed_sea_pickle",
+	  "vanillacookbook:sculky_cheese"
     ]
   },
   "criteria": {

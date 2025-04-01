@@ -6,27 +6,30 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class SludgeItem extends TooltipItem {
-
-	public SludgeItem(Properties properties) {
+public class SculkFoodItem extends CheeseItem{
+	
+	public SculkFoodItem(Properties properties) {
 		super(properties);
 	}
 	
-	public SludgeItem(Properties properties, boolean hasFoodEffectTooltip) {
+	public SculkFoodItem(Properties properties, boolean hasFoodEffectTooltip) {
 		super(properties, hasFoodEffectTooltip, false);
 	}
 
-	public SludgeItem(Properties properties, boolean hasFoodEffectTooltip, boolean hasCustomTooltip) {
+	public SculkFoodItem(Properties properties, boolean hasFoodEffectTooltip, boolean hasCustomTooltip) {
 		super(properties, hasFoodEffectTooltip, hasCustomTooltip);
 	}
-
+	
 	@Override
 	public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
 		super.finishUsingItem(stack, worldIn, entityLiving);
 		if (entityLiving instanceof ServerPlayer) {
 			ServerPlayer serverplayerentity = (ServerPlayer) entityLiving;
-			serverplayerentity.getFoodData().setFoodLevel(0);
-			serverplayerentity.getFoodData().setSaturation(0);
+			int experience = serverplayerentity.experienceLevel;
+			int hunger = serverplayerentity.getFoodData().getFoodLevel();
+			float saturation = serverplayerentity.getFoodData().getSaturationLevel();
+			serverplayerentity.getFoodData().setFoodLevel(hunger + (experience / 6));
+			serverplayerentity.getFoodData().setSaturation(saturation + ((experience / 6) * 2));
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverplayerentity, stack);
 		}
 		return stack;

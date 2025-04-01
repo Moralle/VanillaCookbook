@@ -75,6 +75,7 @@ public class CreativeTabRegistry {
 				    	output.accept(ItemRegistry.NEAPOLITAN_ICE_CREAM.get());
 				    	output.accept(ItemRegistry.PUMPSICLE.get());
 				    	output.accept(ItemRegistry.SNOW_HORN.get());
+				    	output.accept(ItemRegistry.SWEET_SKEWER.get());
 				    	output.accept(ItemRegistry.GLAZED_GLOW_BERRIES.get());
 				    	output.accept(ItemRegistry.POTATO_CHIPS.get());
 				    	output.accept(ItemRegistry.HOT_POTATO_CHIPS.get());
@@ -98,6 +99,7 @@ public class CreativeTabRegistry {
 				    	output.accept(ItemRegistry.STUFFED_SEA_PICKLE.get());
 				    	output.accept(ItemRegistry.MINERS_SALAD.get());
 				    	output.accept(ItemRegistry.NETHERITE_APPLE.get());
+				    	output.accept(ItemRegistry.SCULKY_CHEESE.get());
 				    	output.accept(ItemRegistry.CHOCOLATE_EGG.get());
 				    	output.accept(ItemRegistry.APPLE_JUICE.get());
 				    	output.accept(ItemRegistry.BERRY_JUICE.get());
