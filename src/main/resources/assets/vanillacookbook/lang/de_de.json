@@ -99,6 +99,7 @@
 	"item.vanillacookbook.pitcher_praline": "Kannenpflanzenpraline",
 	"item.vanillacookbook.cherry_blossom_tea": "Kirschbl\u00fctentee",
 	"item.vanillacookbook.sweet_skewer": "S\u00fcﬂspieﬂ",
+	"item.vanillacookbook.sculky_cheese": "Sculk K\u00e4se",
 	
 	"item.vanillacookbook.the_sludge": "Pampe",
 	
@@ -115,7 +116,7 @@
 	"item.vanillacookbook.glow_berry_cake_slice": "Leuchtbeerenkuchenst\u00fcck",
 	
 	"item.vanillacookbook.rose_rock_candy": "Rosa Zuckerkristall",
-	"item.vanillacookbook.polished_rose_rock_candy": "Polierter Rose Zuckerkristall",
+	"item.vanillacookbook.polished_rose_rock_candy": "Polierter Rosa Zuckerkristall",
 	
 	"item.vanillacookbook.mana_roll": "Mana Rolle",
 	"item.vanillacookbook.tater_puffs": "Tater Puffs",
@@ -166,6 +167,8 @@
 	"advancements.more_balanced_diet.description": "Iss alles Essbare... schon wieder!",
 	"advancements.cake.title": "Schwere Kost",
 	"advancements.cake.description": "Crafte einen Buchkuchen. Danke, dass du Vanilla Cookbook benutzt!",
+	"advancements.easter_egg.title": "Easter Egg!",
+	"advancements.easter_egg.description": "Du hast ein wortw\u00f6rtliches Easter Egg gefunden!",
 	
 	"itemGroup.vanillacookbook": "Vanilla Cookbook"
 }

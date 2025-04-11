@@ -978,6 +978,26 @@
           ]
         }
       }
+    },
+    "sweet_skewer": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:sweet_skewer"
+          ]
+        }
+      }
+    },
+    "sculky_cheese": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+          	"vanillacookbook:sculky_cheese"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -1268,6 +1288,12 @@
     ],
     [
       "cherry_blossom_tea"
+    ],
+    [
+      "sweet_skewer"
+    ],
+    [
+      "sculky_cheese"
     ]
   ]
 }
