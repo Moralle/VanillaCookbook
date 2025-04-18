@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  S",
+    "SH ",
+    "IS "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "I": {
+      "tag": "c:rods/wooden"
+    },
+    "H": {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "result": {
+   "id": "vanillacookbook:sword_lollipop"
+  }
+}

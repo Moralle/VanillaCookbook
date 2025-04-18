@@ -7,13 +7,12 @@ import com.morallenplay.vanillacookbook.setup.Config;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.common.BasicItemListing;
-import net.minecraftforge.event.village.VillagerTradesEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.BasicItemListing;
+import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 
-@Mod.EventBusSubscriber(modid = VanillaCookbook.MOD_ID, bus = Bus.FORGE)
+@EventBusSubscriber(modid = VanillaCookbook.MODID)
 public class TradesEvent {
 	
 	//get(level) (Emeralds, Sold Item, max trades, XP to Villager)

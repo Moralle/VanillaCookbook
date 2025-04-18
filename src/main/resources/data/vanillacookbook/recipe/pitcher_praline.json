@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:pitcher_pod"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:pitcher_praline",
+    "count": 8
+  }
+}

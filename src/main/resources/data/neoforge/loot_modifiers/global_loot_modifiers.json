@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "entries": [
+		"vanillacookbook:add_loot_bastion_treasure",
+		"vanillacookbook:add_loot_abandoned_mineshaft",
+		"vanillacookbook:add_loot_bastion_treasure",
+		"vanillacookbook:add_loot_end_city_treasure",
+		"vanillacookbook:add_loot_nether",
+		"vanillacookbook:add_loot_simple_dungeon",
+		"vanillacookbook:add_loot_spawn_bonus_chest",
+		"vanillacookbook:add_loot_village_desert_house",
+		"vanillacookbook:add_loot_village_plains_house",
+		"vanillacookbook:add_loot_village_savanna_house",
+		"vanillacookbook:add_loot_village_snowy_house",
+		"vanillacookbook:add_loot_village_taiga_house",
+		"vanillacookbook:add_loot_woodland_mansion",
+		"vanillacookbook:add_loot_golden_hoe"
+    ]
+}

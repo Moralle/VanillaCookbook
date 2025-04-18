@@ -1,0 +1,24 @@
+{
+  "type": "vanillacookbook:set_remainder",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:berry_juice"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "contained": [
+    {
+      "id": "minecraft:dragon_breath"
+    }
+  ],
+  "container": [
+    {
+      "id": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:berry_soda"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "A A",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:armadillo_scute"
+    }
+  },
+  "result": {
+   "id": "minecraft:bowl"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:rods/wooden"
+    },
+    {
+      "item": "vanillacookbook:ice_cream"
+    },
+    {
+      "item": "minecraft:pumpkin"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:pumpsicle"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "vanillacookbook:berry_cake",
+	"vanillacookbook:carrot_cake",
+	"vanillacookbook:cheesecake",
+	"vanillacookbook:mohnkuchen",
+	"vanillacookbook:ice_cream_cake",
+	"vanillacookbook:rose_cake",
+	"vanillacookbook:chorus_cake",
+	"vanillacookbook:book_cake",
+	"vanillacookbook:glow_berry_cake",
+	"vanillacookbook:pancake_stack",
+	"vanillacookbook:brownie_tray"
+  ]
+}

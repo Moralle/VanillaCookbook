@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vanillacookbook:garden_soup"
+	"vanillacookbook:pumpkin_soup",
+	"vanillacookbook:fish_stew",
+	"vanillacookbook:vegetable_stew",
+	"vanillacookbook:meaty_stew",
+	"vanillacookbook:chicken_soup",
+	"vanillacookbook:ink_soup",
+	"vanillacookbook:glow_ink_soup",
+	"vanillacookbook:fungus_stew",
+	"vanillacookbook:smoldering_stew"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+    "type": "neoforge:add_table",
+    "conditions": [
+		{
+			"condition": "minecraft:any_of",
+			"terms": [
+				{
+				"condition": "minecraft:all_of",
+				"terms": [
+					{
+						"condition": "vanillacookbook:loot_config"
+					},
+					{
+						"condition": "neoforge:loot_table_id",
+						"loot_table_id": "minecraft:chests/bastion_other"
+					}
+				]
+				},
+				{
+				"condition": "minecraft:all_of",
+				"terms": [
+					{
+						"condition": "vanillacookbook:loot_config"
+					},
+					{
+						"condition": "neoforge:loot_table_id",
+						"loot_table_id": "minecraft:chests/nether_bridge"
+					}
+				]
+				}
+			]
+		}
+	],
+    "table": "vanillacookbook:chests/nether"
+}

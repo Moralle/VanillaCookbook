@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "SES",
+    "WMW"
+  ],
+  "key": {
+    "E": {
+      "tag": "c:eggs"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "tag": "c:crops/wheat"
+    },
+    "M": {
+      "tag": "c:foods/milk"
+    },
+    "R": {
+      "item": "minecraft:rose_bush"
+    }
+  },
+  "result": {
+   "id": "vanillacookbook:rose_cake"
+  }
+}

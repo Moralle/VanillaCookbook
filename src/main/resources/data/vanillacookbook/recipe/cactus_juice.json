@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+		"type": "neoforge:components",
+		"items": "minecraft:potion",
+		"components": {
+			"minecraft:potion_contents": {"potion": "minecraft:water"}}
+	},
+    [
+      {"item": "minecraft:cactus"},
+      {"item": "vanillacookbook:cactus_slice"}
+    ],
+    [
+      {"item": "minecraft:cactus"},
+      {"item": "vanillacookbook:cactus_slice"}
+    ]
+  ],
+  "result": {
+   "id": "vanillacookbook:cactus_juice"
+  }
+}

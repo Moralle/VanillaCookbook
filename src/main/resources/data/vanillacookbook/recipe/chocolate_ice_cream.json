@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:np_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:chocolate_ice_cream"
+  }
+}

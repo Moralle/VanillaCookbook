@@ -6,16 +6,16 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 // @Mod.EventBusSubscriber(modid = VanillaCookbook.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeTabRegistry {
 	
-	public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VanillaCookbook.MOD_ID);
+	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VanillaCookbook.MODID);
 	
-	public static final RegistryObject<CreativeModeTab> TAB_VANILLA_COOKBOOK = CREATIVE_TABS.register(VanillaCookbook.MOD_ID,
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB_VANILLA_COOKBOOK = CREATIVE_MODE_TABS.register(VanillaCookbook.MODID,
 			() -> CreativeModeTab.builder()
 					.title(Component.translatable("itemGroup.vanillacookbook"))
 				    .icon(() -> new ItemStack(ItemRegistry.BOOK_CAKE.get()))
@@ -86,6 +86,7 @@ public class CreativeTabRegistry {
 				    	output.accept(ItemRegistry.WARPED_GUMMY.get());
 				    	output.accept(ItemRegistry.CHOCOLATE.get());
 				    	output.accept(ItemRegistry.PITCHER_PRALINE.get());
+				    	output.accept(ItemRegistry.COTTON_CANDY.get());
 				    	output.accept(ItemRegistry.SWORD_LOLLIPOP.get());
 				    	output.accept(ItemRegistry.TRAIL_MIX.get());
 				    	output.accept(ItemRegistry.HOT_CHICKEN_DRUMSTICK.get());

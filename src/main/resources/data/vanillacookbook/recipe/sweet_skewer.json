@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " BB",
+    "BBB",
+    "SB "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sugar_cane"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+   "id": "vanillacookbook:sweet_skewer",
+    "count": 2
+  }
+}

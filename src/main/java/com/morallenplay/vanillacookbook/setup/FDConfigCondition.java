@@ -1,51 +1,24 @@
 package com.morallenplay.vanillacookbook.setup;
 
-import com.google.gson.JsonObject;
-import com.morallenplay.vanillacookbook.VanillaCookbook;
+import org.jetbrains.annotations.NotNull;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.common.crafting.conditions.ICondition;
-import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
+import com.mojang.serialization.MapCodec;
+import net.neoforged.neoforge.common.conditions.ICondition;
 
 public class FDConfigCondition implements ICondition {
 	
-	private final ResourceLocation location;
-	
-	public FDConfigCondition(ResourceLocation location) {
-		this.location = location;
+	public static final MapCodec<FDConfigCondition> CODEC = MapCodec.unit(new FDConfigCondition());
+
+	public FDConfigCondition() {
 	}
-	
+
 	@Override
-	public ResourceLocation getID() {
-		return this.location;
+	public boolean test(@NotNull IContext context) {
+		return Config.FD_ITEMS.get();
 	}
-	
+
 	@Override
-	public boolean test(ICondition.IContext context) {
-		return !Config.FD_ITEMS.get();
-	}
-	
-	public static class Serializer implements IConditionSerializer<FDConfigCondition> {
-		
-		private final ResourceLocation location;
-		
-		public Serializer() {
-			this.location = new ResourceLocation(VanillaCookbook.MOD_ID, "fd_config");
-		}
-		
-		@Override
-		public ResourceLocation getID() {
-			return this.location;
-		}
-		
-		@Override
-		public FDConfigCondition read(JsonObject json) {
-			return new FDConfigCondition(this.location);
-		}
-		
-		@Override
-		public void write(JsonObject json, FDConfigCondition value) {
-			
-		}
+	public @NotNull MapCodec<? extends ICondition> codec() {
+		return CODEC;
 	}
 }

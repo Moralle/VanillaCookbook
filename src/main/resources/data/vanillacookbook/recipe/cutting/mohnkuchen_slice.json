@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:mohnkuchen"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  },
+  "result": [
+    {
+      "id": "vanillacookbook:mohnkuchen_slice",
+      "count": 7
+    }
+  ]
+}

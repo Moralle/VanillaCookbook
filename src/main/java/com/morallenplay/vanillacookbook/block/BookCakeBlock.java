@@ -53,7 +53,6 @@ public class BookCakeBlock extends CakeBlock{
 		super(builder);
 	}
 	
-	@Override
 	public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn,
 			BlockHitResult hit) {
 		if (worldIn.isClientSide) {

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:eggs"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:french_toast",
+    "count": 2
+  }
+}

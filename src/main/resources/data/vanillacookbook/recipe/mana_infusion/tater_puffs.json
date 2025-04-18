@@ -1,0 +1,16 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "vanillacookbook:potato_chips"
+  },
+  "mana": 1337,
+  "output": {
+    "id": "vanillacookbook:tater_puffs"
+  }
+}

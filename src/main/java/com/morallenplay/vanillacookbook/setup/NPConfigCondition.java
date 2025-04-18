@@ -1,51 +1,25 @@
 package com.morallenplay.vanillacookbook.setup;
 
-import com.google.gson.JsonObject;
-import com.morallenplay.vanillacookbook.VanillaCookbook;
+import org.jetbrains.annotations.NotNull;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.common.crafting.conditions.ICondition;
-import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
+import com.mojang.serialization.MapCodec;
+import net.neoforged.neoforge.common.conditions.ICondition;
 
 public class NPConfigCondition implements ICondition {
-	private final ResourceLocation location;
 	
-	public NPConfigCondition(ResourceLocation location) {
-		this.location = location;
+	public static final MapCodec<NPConfigCondition> CODEC = MapCodec.unit(new NPConfigCondition());
+
+	public NPConfigCondition() {
 	}
-	
+
 	@Override
-	public ResourceLocation getID() {
-		return this.location;
+	public boolean test(@NotNull IContext context) {
+		return Config.NP_ITEMS.get();
 	}
-	
+
 	@Override
-	public boolean test(ICondition.IContext context) {
-		return !Config.NP_ITEMS.get();
-	}
-	
-	public static class Serializer implements IConditionSerializer<NPConfigCondition> {
-		
-		private final ResourceLocation location;
-		
-		public Serializer() {
-			this.location = new ResourceLocation(VanillaCookbook.MOD_ID, "np_config");
-		}
-		
-		@Override
-		public ResourceLocation getID() {
-			return this.location;
-		}
-		
-		@Override
-		public NPConfigCondition read(JsonObject json) {
-			return new NPConfigCondition(this.location);
-		}
-		
-		@Override
-		public void write(JsonObject json, NPConfigCondition value) {
-			
-		}
+	public @NotNull MapCodec<? extends ICondition> codec() {
+		return CODEC;
 	}
 }
 

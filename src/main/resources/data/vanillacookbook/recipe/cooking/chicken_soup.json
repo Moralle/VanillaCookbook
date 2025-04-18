@@ -1,0 +1,32 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "vanillacookbook:fd_config"
+    }  
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:raw_chicken"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+   "id": "vanillacookbook:chicken_soup"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

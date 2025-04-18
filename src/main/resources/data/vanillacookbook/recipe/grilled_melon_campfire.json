@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:melon_slice"
+  },
+  "result": {
+  "id": "vanillacookbook:grilled_melon" 
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

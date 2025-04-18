@@ -1,0 +1,20 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:bamboo"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+   "id": "vanillacookbook:cooked_bamboo"
+  }
+}

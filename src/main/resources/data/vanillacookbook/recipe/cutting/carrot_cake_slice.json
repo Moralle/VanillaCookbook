@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:carrot_cake"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  },
+  "result": [
+    {
+      "id": "vanillacookbook:carrot_cake_slice",
+      "count": 7
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:raw_meat"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+   "id": "vanillacookbook:meaty_stew"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

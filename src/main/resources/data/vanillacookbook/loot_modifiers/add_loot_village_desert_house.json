@@ -1,0 +1,18 @@
+{
+    "type": "neoforge:add_table",
+    "conditions": [
+		{
+			"condition": "minecraft:all_of",
+			"terms": [
+				{
+					"condition": "vanillacookbook:loot_config"
+				},
+				{
+					"condition": "neoforge:loot_table_id",
+					"loot_table_id": "minecraft:chests/village/village_desert_house"
+				}
+			]
+		}
+	],
+    "table": "vanillacookbook:chests/village/village_desert_house"
+}

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "c:fungi"
+    },
+    {
+      "tag": "c:fungi"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:fungus_stew"
+  }
+}

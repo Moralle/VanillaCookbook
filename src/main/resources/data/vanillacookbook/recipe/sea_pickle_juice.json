@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+		"type": "neoforge:components",
+		"items": "minecraft:potion",
+		"components": {
+			"minecraft:potion_contents": {"potion": "minecraft:water"}}
+	},
+    {
+      "item": "minecraft:sea_pickle"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:sea_pickle_juice"
+  }
+}

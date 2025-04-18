@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WBW",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "c:crops/wheat"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+   "id": "vanillacookbook:berry_cookie",
+    "count": 8
+  }
+}

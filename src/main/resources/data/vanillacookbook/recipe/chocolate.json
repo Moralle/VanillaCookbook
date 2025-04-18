@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:np_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:chocolate",
+    "count": 4
+  }
+}

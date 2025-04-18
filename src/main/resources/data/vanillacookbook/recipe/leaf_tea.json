@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+		"type": "neoforge:components",
+		"items": "minecraft:potion",
+		"components": {
+			"minecraft:potion_contents": {"potion": "minecraft:water"}}
+	},
+    {
+      "item": "minecraft:birch_leaves"
+    },
+    {
+      "item": "minecraft:spruce_leaves"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:leaf_tea"
+  }
+}

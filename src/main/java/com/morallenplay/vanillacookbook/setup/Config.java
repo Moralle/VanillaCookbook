@@ -1,27 +1,29 @@
 package com.morallenplay.vanillacookbook.setup;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
+
 
 public class Config {
 	
-	public static ForgeConfigSpec COMMON_CONFIG;
-	public static ForgeConfigSpec CLIENT_CONFIG;
+	public static ModConfigSpec COMMON_CONFIG;
+	public static ModConfigSpec CLIENT_CONFIG;
 	
 	public static final String CATEGORY_COMPAT = "compat";
 	public static final String CATEGORY_FEATURES = "features";
 	public static final String CATEGORY_CLIENT = "client";
 	
-	public static ForgeConfigSpec.BooleanValue FD_ITEMS;
-	public static ForgeConfigSpec.BooleanValue NP_ITEMS;
-	public static ForgeConfigSpec.BooleanValue VILLAGER_TRADES;
-	public static ForgeConfigSpec.BooleanValue LOOT_GENERATION;
-	public static ForgeConfigSpec.BooleanValue CHORUS_CAKE_TELEPORTATION;
-	public static ForgeConfigSpec.BooleanValue CHEESE_SMELTING;
-	public static ForgeConfigSpec.BooleanValue FOOD_EFFECT_TOOLTIPS;
-	public static ForgeConfigSpec.BooleanValue FOOD_SPECIAL_TOOLTIPS;
+	public static ModConfigSpec.BooleanValue FD_ITEMS;
+	public static ModConfigSpec.BooleanValue NP_ITEMS;
+	public static ModConfigSpec.BooleanValue VILLAGER_TRADES;
+	public static ModConfigSpec.BooleanValue LOOT_GENERATION;
+	public static ModConfigSpec.BooleanValue GOLDEN_HOE_APPLES;
+	public static ModConfigSpec.BooleanValue CHORUS_CAKE_TELEPORTATION;
+	public static ModConfigSpec.BooleanValue CHEESE_SMELTING;
+	public static ModConfigSpec.BooleanValue FOOD_EFFECT_TOOLTIPS;
+	public static ModConfigSpec.BooleanValue FOOD_SPECIAL_TOOLTIPS;
 	
 	static {
-		ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
+		ModConfigSpec.Builder COMMON_BUILDER = new ModConfigSpec.Builder();
 		
 		COMMON_BUILDER.comment("Enable/Disable Recipes").push(CATEGORY_COMPAT);
 		FD_ITEMS = COMMON_BUILDER.comment("Disable recipes for duplicate/similar items to Farmer's Delight? (Default: false)").define("hideFDItems", false);
@@ -31,6 +33,7 @@ public class Config {
 		COMMON_BUILDER.comment("Enable/Disable Features").push(CATEGORY_FEATURES);
 		VILLAGER_TRADES = COMMON_BUILDER.comment("Disable additional Villager trades? (Default: false)").define("trades", false);
 		LOOT_GENERATION = COMMON_BUILDER.comment("Disable additional loot? (Default: false)").define("loot", false);
+		GOLDEN_HOE_APPLES = COMMON_BUILDER.comment("Disable Oak/Dark Oak Leaves dropping golden apples when broken with a golden hoe? (Default: false)").define("golden_hoe_apples", false);
 		CHORUS_CAKE_TELEPORTATION = COMMON_BUILDER.comment("Disable Chorus Cake Teleportation? (Default: false)").define("cakeTeleportation", false);
 		CHEESE_SMELTING = COMMON_BUILDER.comment("Disable the returnal of a bottle when smelting cheese in a furnace? (Default: false)").define("cheeseBottle", false);
 		
@@ -38,7 +41,7 @@ public class Config {
 		
 		COMMON_CONFIG = COMMON_BUILDER.build();
 		
-		ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
+		ModConfigSpec.Builder CLIENT_BUILDER = new ModConfigSpec.Builder();
 		
 		CLIENT_BUILDER.comment("Client settings").push(CATEGORY_CLIENT);
 		
@@ -51,12 +54,4 @@ public class Config {
 
 		CLIENT_CONFIG = CLIENT_BUILDER.build();
 	}
-	
-//	@SubscribeEvent
-//	public static void onLoad(final ModConfig.Loading configEvent) {
-//	}
-//
-//	@SubscribeEvent
-//	public static void onReload(final ModConfig.Reloading configEvent) {
-//	}
 }

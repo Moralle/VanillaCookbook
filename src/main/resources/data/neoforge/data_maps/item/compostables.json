@@ -1,0 +1,184 @@
+{
+	"values":{
+		"vanillacookbook:cooked_bamboo": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cooked_beetroot": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cooked_egg": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cooked_turtle_egg": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cooked_sniffer_egg": {
+				"chance": 1
+		},
+		"vanillacookbook:grilled_melon": {
+				"chance": 0.85
+		},
+		"vanillacookbook:baked_apple": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cheese": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cactus_slice": {
+				"chance": 0.5
+		},
+		"vanillacookbook:cooked_cactus_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:apple_pie": {
+				"chance": 1
+		},
+		"vanillacookbook:beetroot_pie": {
+				"chance": 1
+		},
+		"vanillacookbook:berry_pie": {
+				"chance": 1
+		},
+		"vanillacookbook:wart_pie": {
+				"chance": 1
+		},
+		"vanillacookbook:poisonous_pie": {
+				"chance": 1
+		},
+		"vanillacookbook:berry_cookie": {
+				"chance": 0.85
+		},
+		"vanillacookbook:honey_cookie": {
+				"chance": 0.85
+		},
+		"vanillacookbook:potato_cookie": {
+				"chance": 0.85
+		},
+		"vanillacookbook:pumpkin_cookie": {
+				"chance": 0.85
+		},
+		"vanillacookbook:sunflower_seed_cookie": {
+				"chance": 0.85
+		},
+		"vanillacookbook:pancake": {
+				"chance": 1
+		},
+		"vanillacookbook:berry_pancake": {
+				"chance": 1
+		},
+		"vanillacookbook:bacon_pancake": {
+				"chance": 1
+		},
+		"vanillacookbook:creepe": {
+				"chance": 1
+		},
+		"vanillacookbook:potato_chips": {
+				"chance": 0.85
+		},
+		"vanillacookbook:hot_potato_chips": {
+				"chance": 0.85
+		},
+		"vanillacookbook:beet_chips": {
+				"chance": 0.85
+		},
+		"vanillacookbook:apple_chips": {
+				"chance": 0.85
+		},
+		"vanillacookbook:brownie": {
+				"chance": 1
+		},
+		"vanillacookbook:berry_brownie": {
+				"chance": 1
+		},
+		"vanillacookbook:trail_mix": {
+				"chance": 0.3
+		},
+		"vanillacookbook:french_toast": {
+				"chance": 1
+		},
+		"vanillacookbook:potato_pancake": {
+				"chance": 1
+		},
+		"vanillacookbook:miners_salad": {
+				"chance": 0.85
+		},
+		"vanillacookbook:berry_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:carrot_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:cheesecake": {
+				"chance": 1
+		},
+		"vanillacookbook:chocolate_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:mohnkuchen": {
+				"chance": 1
+		},
+		"vanillacookbook:ice_cream_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:rose_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:chorus_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:book_cake": {
+				"chance": 1
+		},
+		"vanillacookbook:berry_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:carrot_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:cheesecake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:chocolate_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:mohnkuchen_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:ice_cream_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:rose_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:chorus_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:book_cake_slice": {
+				"chance": 0.85
+		},
+		"vanillacookbook:pancake_stack": {
+				"chance": 1
+		},
+		"vanillacookbook:brownie_tray": {
+				"chance": 1
+		},
+		"vanillacookbook:stuffed_sea_pickle": {
+				"chance": 1
+		},
+		"vanillacookbook:pizza": {
+				"chance": 1
+		},
+		"vanillacookbook:mana_roll": {
+				"chance": 1
+		},
+		"vanillacookbook:tater_puffs": {
+				"chance": 0.85
+		},
+		"vanillacookbook:sweet_skewer": {
+				"chance": 0.85
+		},
+		"vanillacookbook:sculky_cheese": {
+				"chance": 1
+		}
+	}
+}

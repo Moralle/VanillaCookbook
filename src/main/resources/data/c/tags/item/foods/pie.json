@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "vanillacookbook:apple_pie",
+	"vanillacookbook:berry_pie",
+	"vanillacookbook:beetroot_pie",
+	"vanillacookbook:wart_pie",
+	"vanillacookbook:poisonous_pie"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "c:foods/save_raw_fish"
+    },
+    {
+      "tag": "c:foods/save_raw_fish"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:fish_stew"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "tag": "vanillacookbook:hot_spices"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:hot_potato_chips",
+    "count": 3
+  }
+}

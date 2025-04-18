@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  	{
+      "tag": "c:crops/wheat"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:foods/raw_pork"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:bacon_pancake"
+  }
+}

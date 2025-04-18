@@ -1,116 +1,114 @@
 package com.morallenplay.vanillacookbook.setup;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
-import com.morallenplay.vanillacookbook.registry.RecipeRegistry;
+import java.util.List;
 
-import it.unimi.dsi.fastutil.ints.IntList;
+import com.morallenplay.vanillacookbook.registry.RecipeSerializerRegistry;
+
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
-import net.minecraft.core.RegistryAccess;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.GsonHelper;
-import net.minecraft.world.entity.player.StackedContents;
-import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CraftingBookCategory;
+import net.minecraft.world.item.crafting.CraftingInput;
 import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 
 public class SetRemainderRecipe implements CraftingRecipe {
 	
 	//public static final RecipeSerializer<SetRemainderRecipe> SERIALIZER = new SetRemainderRecipe.Serializer();
 	
-	private final ResourceLocation id;
 	final String group;
 	final CraftingBookCategory category;
 	final ItemStack result;
 	final NonNullList<Ingredient> ingredients;
-	final NonNullList<ItemStack> contained;
-	final NonNullList<ItemStack> remainder;
+	final List<ItemStack> contained;
+	final List<ItemStack> remainder;
 	private final boolean isSimple;
 	   
-	   public SetRemainderRecipe(ResourceLocation location, String group, CraftingBookCategory category, ItemStack output, NonNullList<Ingredient> ingredient, NonNullList<ItemStack> contained, NonNullList<ItemStack> container) {
-		   this.id = location;
+	   public SetRemainderRecipe(String group, CraftingBookCategory category, ItemStack output, List<Ingredient> ingredients, List<ItemStack> contained, List<ItemStack> container) {
 		   this.group = group;
 		   this.category = category;
 		   this.result = output;
-		   this.ingredients = ingredient;
+		   this.ingredients = NonNullList.of(Ingredient.EMPTY, ingredients.toArray(Ingredient[]::new));
 		   this.contained = contained;
 		   this.remainder = container;
-		   this.isSimple = ingredient.stream().allMatch(Ingredient::isSimple);
+		   this.isSimple = ingredients.stream().allMatch(Ingredient::isSimple);
 	   }
 	
 	@Override
 	public RecipeType<?> getType() {
 		return RecipeType.CRAFTING;
-		   }
+		}
 
 	@Override
-	public boolean matches(CraftingContainer c, Level level) {
-	      StackedContents stackedcontents = new StackedContents();
-	      java.util.List<ItemStack> inputs = new java.util.ArrayList<>();
-	      int i = 0;
-
-	      for(int j = 0; j < c.getContainerSize(); ++j) {
-	         ItemStack itemstack = c.getItem(j);
-	         if (!itemstack.isEmpty()) {
-	            ++i;
-	            if (isSimple)
-	            stackedcontents.accountStack(itemstack, 1);
-	            else inputs.add(itemstack);
-	         }
-	      }
-
-	      return i == this.ingredients.size() && (isSimple ? stackedcontents.canCraft(this, (IntList)null) : net.minecraftforge.common.util.RecipeMatcher.findMatches(inputs,  this.ingredients) != null);
-	}
-
-	@Override
-	public ItemStack assemble(CraftingContainer c, RegistryAccess a) {
-		return this.result.copy();
-	}
-
-	@Override
-	public boolean canCraftInDimensions(int p_43999_, int p_44000_) {
-		 return p_43999_ * p_44000_ >= this.ingredients.size();
-	}
-
-	@Override
-	public ItemStack getResultItem(RegistryAccess a) {
-		return this.result;
-	}
+	public boolean matches(CraftingInput input, Level level) {
+        if (input.ingredientCount() != this.ingredients.size()) {
+            return false;
+        } else if (!isSimple) {
+            var nonEmptyItems = new java.util.ArrayList<ItemStack>(input.ingredientCount());
+            for (var item : input.items())
+                if (!item.isEmpty())
+                    nonEmptyItems.add(item);
+            return net.neoforged.neoforge.common.util.RecipeMatcher.findMatches(nonEmptyItems, this.ingredients) != null;
+        } else {
+            return input.size() == 1 && this.ingredients.size() == 1
+                ? this.ingredients.getFirst().test(input.getItem(0))
+                : input.stackedContents().canCraft(this, null);
+        }
+    }
 	
 	@Override
-	public NonNullList<Ingredient> getIngredients() {
-	      return this.ingredients;
-	   }
+    public ItemStack assemble(CraftingInput input, HolderLookup.Provider registries) {
+        return this.result.copy();
+    }
 
 	@Override
-	public ResourceLocation getId() {
-		return this.id;
-	}
+    public boolean canCraftInDimensions(int width, int height) {
+        return width * height >= this.ingredients.size();
+    }
+
+	@Override
+    public ItemStack getResultItem(HolderLookup.Provider registries) {
+        return this.result;
+    }
+	
 	
 	@Override
-	public String getGroup() {
-	      return this.group;
-	}
-	
-	public CraftingBookCategory category() {
-	      return this.category;
-	   }
+    public String getGroup() {
+        return this.group;
+    }
 	
 	@Override
-	public NonNullList<ItemStack> getRemainingItems(CraftingContainer container) {
-	      NonNullList<ItemStack> nonnulllist = NonNullList.withSize(container.getContainerSize(), ItemStack.EMPTY);
+    public CraftingBookCategory category() {
+        return this.category;
+    }
+	
+	public ItemStack getResult() {
+        return this.result;
+    }
+	
+	@Override
+    public NonNullList<Ingredient> getIngredients() {
+        return this.ingredients;
+    }
+	
+	public List<ItemStack> getContained() {
+        return this.contained;
+    }
+	
+	public List<ItemStack> getContainer() {
+        return this.remainder;
+    }
+	
+	@Override
+	public NonNullList<ItemStack> getRemainingItems(CraftingInput input) {
+	      NonNullList<ItemStack> nonnulllist = NonNullList.withSize(input.size(), ItemStack.EMPTY);
 
 	      for(int i = 0; i < nonnulllist.size(); ++i) {
-	         ItemStack item = container.getItem(i);
+	         ItemStack item = input.getItem(i);
 	         
 	         for (int j = 0; j < contained.size(); ++j) {
 	        	 
@@ -133,100 +131,7 @@ public class SetRemainderRecipe implements CraftingRecipe {
 
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return RecipeRegistry.SET_REMAINDER_RECIPE.get();
+		return RecipeSerializerRegistry.SET_REMAINDER_RECIPE.get();
 	}
 	
-	@SuppressWarnings("unused")
-	public static class Serializer implements RecipeSerializer<SetRemainderRecipe> {
-	      private static final ResourceLocation NAME = new ResourceLocation("minecraft", "crafting_shapeless");
-	      @SuppressWarnings("deprecation")
-		public SetRemainderRecipe fromJson(ResourceLocation location, JsonObject object) {
-	         String s = GsonHelper.getAsString(object, "group", "");
-	         CraftingBookCategory craftingbookcategory = CraftingBookCategory.CODEC.byName(GsonHelper.getAsString(object, "category", (String)null), CraftingBookCategory.MISC);
-	         NonNullList<Ingredient> nonnulllist = itemsFromJson(GsonHelper.getAsJsonArray(object, "ingredients"));
-	         NonNullList<ItemStack> contained = containItemFromJson(GsonHelper.getAsJsonArray(object, "contained"));
-	         NonNullList<ItemStack> containers = containItemFromJson(GsonHelper.getAsJsonArray(object, "containers"));
-	         if (nonnulllist.isEmpty()) {
-	            throw new JsonParseException("No ingredients for shapeless recipe");
-	         } else {
-	            ItemStack itemstack = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(object, "result"));
-	            return new SetRemainderRecipe(location, s, craftingbookcategory, itemstack, nonnulllist, contained, containers);
-	         }
-	      }
-
-	      private static NonNullList<Ingredient> itemsFromJson(JsonArray array) {
-	         NonNullList<Ingredient> nonnulllist = NonNullList.create();
-
-	         for(int i = 0; i < array.size(); ++i) {
-	            Ingredient ingredient = Ingredient.fromJson(array.get(i));
-	            if (true || !ingredient.isEmpty()) { // FORGE: Skip checking if an ingredient is empty during shapeless recipe deserialization to prevent complex ingredients from caching tags too early. Can not be done using a config value due to sync issues.
-	               nonnulllist.add(ingredient);
-	            }
-	         }
-
-	         return nonnulllist;
-	      }
-	      
-	      private static NonNullList<ItemStack> containItemFromJson(JsonArray array) {
-		         NonNullList<ItemStack> nonnulllist = NonNullList.create();
-
-		         for(int i = 0; i < array.size(); ++i) {
-		            ItemStack item = ShapedRecipe.itemStackFromJson(GsonHelper.convertToJsonObject(array.get(i), null));
-		            if (true || !item.isEmpty()) {
-		               nonnulllist.add(item);
-		            }
-		         }
-
-		         return nonnulllist;
-		      }
-
-	      public SetRemainderRecipe fromNetwork(ResourceLocation location, FriendlyByteBuf bytebuf) {
-	         String s = bytebuf.readUtf();
-	         CraftingBookCategory craftingbookcategory = bytebuf.readEnum(CraftingBookCategory.class);
-	         int i = bytebuf.readVarInt();
-	         int j = bytebuf.readVarInt();
-	         int k = bytebuf.readVarInt();
-	         NonNullList<Ingredient> nonnulllist = NonNullList.withSize(i, Ingredient.EMPTY);
-	         NonNullList<ItemStack> contained = NonNullList.withSize(j, ItemStack.EMPTY);
-	         NonNullList<ItemStack> containers = NonNullList.withSize(k, ItemStack.EMPTY);
-
-	         for(int l = 0; l < nonnulllist.size(); ++l) {
-	            nonnulllist.set(l, Ingredient.fromNetwork(bytebuf));
-	         }
-	         
-	         for(int m = 0; m < contained.size(); ++m) {
-	        	 contained.set(m, bytebuf.readItem());
-		     }
-	         
-	         for(int n = 0; n < containers.size(); ++n) {
-	        	 containers.set(n, bytebuf.readItem());
-		     }
-
-	         ItemStack itemstack = bytebuf.readItem();
-	         return new SetRemainderRecipe(location, s, craftingbookcategory, itemstack, nonnulllist, contained, containers);
-	      }
-
-	      public void toNetwork(FriendlyByteBuf bytebuf, SetRemainderRecipe recipe) {
-	         bytebuf.writeUtf(recipe.group);
-	         bytebuf.writeEnum(recipe.category);
-	         bytebuf.writeVarInt(recipe.ingredients.size());
-	         bytebuf.writeVarInt(recipe.contained.size());
-	         bytebuf.writeVarInt(recipe.remainder.size());
-
-	         for(Ingredient ingredient : recipe.ingredients) {
-	            ingredient.toNetwork(bytebuf);
-	         }
-	         
-	         for(ItemStack contained : recipe.contained) {
-	        	 bytebuf.writeItem(contained);
-		     }
-	         
-	         for(ItemStack containers : recipe.remainder) {
-	        	 bytebuf.writeItem(containers);
-		     }
-
-	         bytebuf.writeItem(recipe.result);
-	      }
-	   }
-
 }

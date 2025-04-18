@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:fruit_salad"
+  }
+}

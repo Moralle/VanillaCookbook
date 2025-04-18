@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WPW",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "c:crops/wheat"
+    },
+    "P": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+   "id": "vanillacookbook:potato_cookie",
+    "count": 2
+  }
+}

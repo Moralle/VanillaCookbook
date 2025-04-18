@@ -1,29 +1,25 @@
 package com.morallenplay.vanillacookbook.item;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 
 import com.morallenplay.vanillacookbook.setup.Config;
+//import com.morallenplay.vanillacookbook.setup.Config;
 import com.morallenplay.vanillacookbook.util.TooltipUtils;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class TooltipItem extends Item{
 	private final boolean hasFoodEffectTooltip;
 	private final boolean hasCustomTooltip;
 
-	/**
-	 * Items that can be consumed by an entity.
-	 * When consumed, they may affect the consumer somehow, and will give back containers if applicable, regardless of their stack size.
-	 */
 	public TooltipItem(Properties properties) {
 		super(properties);
 		this.hasFoodEffectTooltip = false;
@@ -42,17 +38,16 @@ public class TooltipItem extends Item{
 		this.hasCustomTooltip = hasCustomTooltip;
 	}
 	
-	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
+	public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag isAdvanced) {
 		
 		if (this.hasCustomTooltip && Config.FOOD_SPECIAL_TOOLTIPS.get()) {
-			MutableComponent textEmpty = TooltipUtils.getTranslation("tooltip." + this);
+			MutableComponent textEmpty = TooltipUtils.getTranslation("tooltip." + BuiltInRegistries.ITEM.getKey(this).getPath());
 			tooltip.add(textEmpty.withStyle(ChatFormatting.BLUE));
 		}
 		
 		if (this.hasFoodEffectTooltip && Config.FOOD_EFFECT_TOOLTIPS.get()) {
-			TooltipUtils.addFoodEffectTooltip(stack, tooltip, 1.0F);
+			TooltipUtils.addFoodEffectTooltip(stack, tooltip::add, 1.0F, context.tickRate());
 		}
 	}
 }

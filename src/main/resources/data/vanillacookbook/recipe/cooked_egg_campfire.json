@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "vanillacookbook:fd_config"
+    }
+  ],
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": {
+  "id": "vanillacookbook:cooked_egg" 
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

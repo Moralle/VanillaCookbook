@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "vanillacookbook:milk_bottle"
+  },
+  "result": {
+  "id": "vanillacookbook:cheese" 
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

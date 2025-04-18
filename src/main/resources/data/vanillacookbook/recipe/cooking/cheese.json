@@ -1,0 +1,20 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "c:milk/milk_bottle"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+   "id": "vanillacookbook:cheese"
+  }
+}

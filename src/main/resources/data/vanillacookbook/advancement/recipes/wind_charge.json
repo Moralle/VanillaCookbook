@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:cotton_candy"
+    ]
+  },
+  "criteria": {
+    "has_wind_charge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            	"minecraft:wind_charge"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wind_charge"
+    ]
+  ]
+}

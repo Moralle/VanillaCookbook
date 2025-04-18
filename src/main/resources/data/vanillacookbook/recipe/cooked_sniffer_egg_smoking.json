@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:sniffer_egg"
+  },
+  "result": {
+  "id": "vanillacookbook:cooked_sniffer_egg" 
+  },
+  "experience": 0.35,
+  "cookingtime": 100
+}

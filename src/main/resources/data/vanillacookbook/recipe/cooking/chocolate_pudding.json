@@ -1,0 +1,32 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:milk"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+   "id": "vanillacookbook:chocolate_pudding"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

@@ -1,0 +1,23 @@
+  {
+  "type": "vanillacookbook:set_remainder",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:milk_bottle"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "contained": [
+    
+  ],
+  "container": [
+    
+  ],
+  "result": {
+   "id": "vanillacookbook:berry_milk"
+  }
+}

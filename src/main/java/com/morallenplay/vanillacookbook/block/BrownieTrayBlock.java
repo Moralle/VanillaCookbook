@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
@@ -74,20 +75,26 @@ public class BrownieTrayBlock extends Block {
 		return (6 - blockState.getValue(BITES)) * 2;
 	}
 
-	public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player,
-			InteractionHand handIn, BlockHitResult hit) {
-		if (worldIn.isClientSide) {
-			ItemStack itemstack = player.getItemInHand(handIn);
-			if (this.eatCake(worldIn, pos, state, player) == InteractionResult.SUCCESS) {
+	@Override
+    protected ItemInteractionResult useItemOn(
+        ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult)
+    {
+			return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+	}
+
+	@Override
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+		if (level.isClientSide) {
+			if (this.eatCake(level, pos, state, player) == InteractionResult.SUCCESS) {
 				return InteractionResult.SUCCESS;
 			}
 
-			if (itemstack.isEmpty()) {
+			if (player.getItemInHand(InteractionHand.MAIN_HAND).isEmpty()) {
 				return InteractionResult.CONSUME;
 			}
 		}
 
-		return this.eatCake(worldIn, pos, state, player);
+		return this.eatCake(level, pos, state, player);
 	}
 
 	private InteractionResult eatCake(LevelAccessor world, BlockPos pos, BlockState state, Player player) {
@@ -108,7 +115,6 @@ public class BrownieTrayBlock extends Block {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor worldIn,
 			BlockPos currentPos, BlockPos facingPos) {
 		return facing == Direction.DOWN && !stateIn.canSurvive(worldIn, currentPos) ? Blocks.AIR.defaultBlockState()

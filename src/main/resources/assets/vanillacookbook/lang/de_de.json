@@ -69,12 +69,10 @@
 	"item.vanillacookbook.magma_jelly": "Magmawackelpudding",
 	"item.vanillacookbook.wart_pie": "Warzentorte",
 	"item.vanillacookbook.baked_apple": "Bratapfel",
-	"item.vanillacookbook.cooked_sea_pickle": "Gekochte Meeresgurke",
 	"item.vanillacookbook.cooked_turtle_egg": "Gekochtes Schildkr\u00f6tenei",
 	"item.vanillacookbook.sea_pickle_juice": "Meeresgurkensaft",
 	"item.vanillacookbook.apple_sauce": "Apfelmus",
 	"item.vanillacookbook.potato_pancake": "Kartoffelpuffer",
-	"item.vanillacookbook.sugar_crystal": "Zuckerkrystall",
 	"item.vanillacookbook.sword_lollipop": "Schwerdlutscher",
 	"item.vanillacookbook.sea_pickle_soda": "Meeresgurkenschorle",
 	"item.vanillacookbook.apple_chips": "Apfelchips",
@@ -98,8 +96,8 @@
 	"item.vanillacookbook.cooked_sniffer_egg": "Gekochtes Schn\u00fcfflerei",
 	"item.vanillacookbook.pitcher_praline": "Kannenpflanzenpraline",
 	"item.vanillacookbook.cherry_blossom_tea": "Kirschbl\u00fctentee",
-	"item.vanillacookbook.sweet_skewer": "S\u00fcßspieß",
-	"item.vanillacookbook.sculky_cheese": "Sculk K\u00e4se",
+	"item.vanillacookbook.sweet_skewer": "S\u00fcï¿½spieï¿½",
+	"item.vanillacookbook.cotton_candy": "Zuckerwatte",
 	
 	"item.vanillacookbook.the_sludge": "Pampe",
 	
@@ -116,7 +114,7 @@
 	"item.vanillacookbook.glow_berry_cake_slice": "Leuchtbeerenkuchenst\u00fcck",
 	
 	"item.vanillacookbook.rose_rock_candy": "Rosa Zuckerkristall",
-	"item.vanillacookbook.polished_rose_rock_candy": "Polierter Rosa Zuckerkristall",
+	"item.vanillacookbook.polished_rose_rock_candy": "Polierter Rose Zuckerkristall",
 	
 	"item.vanillacookbook.mana_roll": "Mana Rolle",
 	"item.vanillacookbook.tater_puffs": "Tater Puffs",
@@ -153,6 +151,7 @@
 	"vanillacookbook.tooltip.pitcher_praline": "L\u00f6scht Abbaul\u00e4hmung",
 	"vanillacookbook.tooltip.stuffed_sea_pickle": "L\u00f6scht Alle Effekte",
 	"vanillacookbook.tooltip.sculky_cheese": "L\u00f6scht Alle Effekte & S\u00e4ttigt 1 Hunger und 2 S\u00e4ttigung Mehr Per 6 XP Levels",
+	"vanillacookbook.tooltip.cotton_candy": "Hebt Dich in die Luft",
 	"vanillacookbook.tooltip.milk_bottle": "L\u00f6scht Alle Effekte",
 	"vanillacookbook.tooltip.chocolate_milk": "L\u00f6scht Alle Effekte",
 	"vanillacookbook.tooltip.berry_milk": "L\u00f6scht Alle Effekte",
@@ -167,8 +166,6 @@
 	"advancements.more_balanced_diet.description": "Iss alles Essbare... schon wieder!",
 	"advancements.cake.title": "Schwere Kost",
 	"advancements.cake.description": "Crafte einen Buchkuchen. Danke, dass du Vanilla Cookbook benutzt!",
-	"advancements.easter_egg.title": "Easter Egg!",
-	"advancements.easter_egg.description": "Du hast ein wortw\u00f6rtliches Easter Egg gefunden!",
 	
 	"itemGroup.vanillacookbook": "Vanilla Cookbook"
 }

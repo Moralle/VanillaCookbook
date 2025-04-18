@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:breeze_rod"
+    },
+	{
+      "item": "minecraft:wind_charge"
+    },
+	{
+      "item": "minecraft:red_dye"
+    },
+	{
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:cotton_candy"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:apple"
+  },
+  "result": {
+  "id": "vanillacookbook:baked_apple"
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

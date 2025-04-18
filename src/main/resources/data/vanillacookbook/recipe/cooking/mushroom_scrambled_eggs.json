@@ -1,0 +1,32 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:milk"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+   "id": "vanillacookbook:mushroom_scrambled_eggs"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

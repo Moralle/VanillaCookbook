@@ -1,0 +1,29 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "tag": "c:milk"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+   "id": "vanillacookbook:mashed_potatoes"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:foods/raw_meat"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:foods/milk"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:meatball",
+    "count": 3
+  }
+}

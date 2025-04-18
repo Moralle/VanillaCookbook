@@ -1,0 +1,24 @@
+{
+  "type": "vanillacookbook:set_remainder",
+  "ingredients": [
+    {
+      "item": "vanillacookbook:sea_pickle_juice"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "contained": [
+    {
+      "id": "minecraft:dragon_breath"
+    }
+  ],
+  "container": [
+    {
+      "id": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:sea_pickle_soda"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WSW",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "c:crops/wheat"
+    },
+    "S": {
+      "tag": "c:sunflowers"
+    }
+  },
+  "result": {
+   "id": "vanillacookbook:sunflower_seed_cookie",
+    "count": 8
+  }
+}

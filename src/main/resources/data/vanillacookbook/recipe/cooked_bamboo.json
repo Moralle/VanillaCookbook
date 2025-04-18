@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:bamboo"
+  },
+  "result": {
+  "id": "vanillacookbook:cooked_bamboo" 
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

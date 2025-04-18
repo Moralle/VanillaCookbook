@@ -1,0 +1,43 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "vanillacookbook:fd_config"
+    }  
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    [
+      {"item": "minecraft:potato"},
+      {"item": "minecraft:beetroot"}
+    ],
+    [
+      {"item": "minecraft:potato"},
+      {"item": "minecraft:beetroot"}
+    ],
+    {
+      "item": "minecraft:pumpkin"
+    },
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "item": "minecraft:kelp"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+   "id": "vanillacookbook:vegetable_stew"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

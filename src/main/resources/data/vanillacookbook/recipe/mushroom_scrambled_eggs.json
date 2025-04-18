@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "tag": "c:mushrooms"
+    }
+  ],
+  "result": {
+   "id": "vanillacookbook:mushroom_scrambled_eggs"
+  }
+}

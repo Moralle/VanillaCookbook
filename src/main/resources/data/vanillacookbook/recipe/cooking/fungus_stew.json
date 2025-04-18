@@ -1,0 +1,29 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "vanillacookbook:fd_config"
+    }  
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:fungi"
+    },
+    {
+      "tag": "c:fungi"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+   "id": "vanillacookbook:fungus_stew"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

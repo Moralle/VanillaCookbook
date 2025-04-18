@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "vanillacookbook:sculky_cheese"
+    ]
+  },
+  "criteria": {
+    "deep_dark": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "minecraft:deep_dark"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "deep_dark"
+    ]
+  ]
+}

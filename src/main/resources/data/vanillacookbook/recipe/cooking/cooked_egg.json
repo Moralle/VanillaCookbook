@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "vanillacookbook:fd_config"
+    }  
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+   "id": "vanillacookbook:cooked_egg"
+  }
+}
