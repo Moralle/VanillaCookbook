@@ -21,9 +21,11 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:apple_sauce"
+    "id": "vanillacookbook:apple_sauce",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

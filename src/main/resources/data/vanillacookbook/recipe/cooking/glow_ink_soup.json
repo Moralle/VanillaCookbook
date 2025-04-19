@@ -18,9 +18,11 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:glow_ink_soup"
+    "id": "vanillacookbook:glow_ink_soup",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

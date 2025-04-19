@@ -24,9 +24,11 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:meaty_stew"
+    "id": "vanillacookbook:meaty_stew",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

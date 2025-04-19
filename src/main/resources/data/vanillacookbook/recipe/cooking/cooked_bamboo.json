@@ -15,6 +15,7 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:cooked_bamboo"
+    "id": "vanillacookbook:cooked_bamboo",
+	"count": 1
   }
 }

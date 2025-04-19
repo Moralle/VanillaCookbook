@@ -23,6 +23,7 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:cooked_beetroot"
+    "id": "vanillacookbook:cooked_beetroot",
+	"count": 1
   }
 }

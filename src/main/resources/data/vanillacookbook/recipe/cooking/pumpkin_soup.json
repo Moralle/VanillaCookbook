@@ -24,9 +24,11 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:pumpkin_soup"
+    "id": "vanillacookbook:pumpkin_soup",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

@@ -16,7 +16,7 @@
       "tag": "c:eggs"
     },
     {
-      "tag": "c:milk"
+      "tag": "c:foods/milk"
     },
     {
       "item": "minecraft:cocoa_beans"
@@ -24,9 +24,11 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:chocolate_pudding"
+    "id": "vanillacookbook:chocolate_pudding",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

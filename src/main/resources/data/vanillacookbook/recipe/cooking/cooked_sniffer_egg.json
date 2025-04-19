@@ -15,6 +15,7 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:cooked_sniffer_egg"
+    "id": "vanillacookbook:cooked_sniffer_egg",
+	"count": 1
   }
 }

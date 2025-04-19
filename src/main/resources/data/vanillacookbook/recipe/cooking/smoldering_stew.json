@@ -21,9 +21,11 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:smoldering_stew"
+    "id": "vanillacookbook:smoldering_stew",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

@@ -16,14 +16,16 @@
       "tag": "c:eggs"
     },
     {
-      "tag": "c:milk"
+      "tag": "c:foods/milk"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:pudding"
+    "id": "vanillacookbook:pudding",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

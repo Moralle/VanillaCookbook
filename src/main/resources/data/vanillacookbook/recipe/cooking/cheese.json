@@ -10,11 +10,12 @@
   "experience": 0.35,
   "ingredients": [
     {
-      "tag": "c:milk/milk_bottle"
+      "tag": "c:foods/milk_bottle"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:cheese"
+    "id": "vanillacookbook:cheese",
+	"count": 1
   }
 }

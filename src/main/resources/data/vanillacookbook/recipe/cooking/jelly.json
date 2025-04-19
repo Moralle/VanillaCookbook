@@ -18,9 +18,11 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:jelly"
+    "id": "vanillacookbook:jelly",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

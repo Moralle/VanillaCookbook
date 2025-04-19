@@ -19,14 +19,16 @@
       "tag": "c:eggs"
     },
     {
-      "tag": "c:milk"
+      "tag": "c:foods/milk"
     }
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:mushroom_scrambled_eggs"
+    "id": "vanillacookbook:mushroom_scrambled_eggs",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

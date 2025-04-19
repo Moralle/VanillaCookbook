@@ -15,6 +15,7 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-   "id": "vanillacookbook:cooked_turtle_egg"
+    "id": "vanillacookbook:cooked_turtle_egg",
+	"count": 1
   }
 }

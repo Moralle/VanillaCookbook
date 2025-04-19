@@ -16,14 +16,16 @@
       "item": "minecraft:potato"
     },
     {
-      "tag": "c:milk"
+      "tag": "c:foods/milk"
     }
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:mashed_potatoes"
+    "id": "vanillacookbook:mashed_potatoes",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }

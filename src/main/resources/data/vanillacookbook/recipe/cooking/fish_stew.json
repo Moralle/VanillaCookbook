@@ -21,9 +21,11 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-   "id": "vanillacookbook:fish_stew"
+    "id": "vanillacookbook:fish_stew",
+	"count": 1
   },
   "container": {
-    "id": "minecraft:bowl"
+    "id": "minecraft:bowl",
+	"count": 1
   }
 }
