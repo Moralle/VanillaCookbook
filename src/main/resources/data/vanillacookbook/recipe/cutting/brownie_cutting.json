@@ -16,8 +16,10 @@
   },
   "result": [
     {
-      "id": "vanillacookbook:brownie",
-      "count": 6
+		"item": {
+		  "id": "vanillacookbook:brownie",
+		  "count": 6
+		}
     }
   ]
 }

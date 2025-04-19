@@ -16,8 +16,10 @@
   },
   "result": [
     {
-      "id": "vanillacookbook:cactus_slice",
-      "count": 2
+		"item": {
+		  "id": "vanillacookbook:cactus_slice",
+		  "count": 2
+		}
     }
   ]
 }

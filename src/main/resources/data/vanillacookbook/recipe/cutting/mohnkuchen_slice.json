@@ -16,8 +16,10 @@
   },
   "result": [
     {
-      "id": "vanillacookbook:mohnkuchen_slice",
-      "count": 7
+		"item": {
+		  "id": "vanillacookbook:mohnkuchen_slice",
+		  "count": 7
+		}
     }
   ]
 }

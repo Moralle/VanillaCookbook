@@ -16,8 +16,10 @@
   },
   "result": [
     {
-      "id": "vanillacookbook:berry_cake_slice",
-      "count": 7
+		"item": {
+		  "id": "vanillacookbook:berry_cake_slice",
+		  "count": 7
+		}
     }
   ]
 }

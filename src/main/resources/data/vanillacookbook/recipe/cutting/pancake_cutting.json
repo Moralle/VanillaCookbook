@@ -16,8 +16,10 @@
   },
   "result": [
     {
-      "id": "vanillacookbook:pancake",
-      "count": 5
+		"item": {
+		  "id": "vanillacookbook:pancake",
+		  "count": 5
+		}
     }
   ]
 }
