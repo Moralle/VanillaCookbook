@@ -14,7 +14,7 @@ public class NPConfigCondition implements ICondition {
 
 	@Override
 	public boolean test(@NotNull IContext context) {
-		return Config.NP_ITEMS.get();
+		return !Config.NP_ITEMS.get();
 	}
 
 	@Override

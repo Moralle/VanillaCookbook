@@ -14,7 +14,7 @@ public class FDConfigCondition implements ICondition {
 
 	@Override
 	public boolean test(@NotNull IContext context) {
-		return Config.FD_ITEMS.get();
+		return !Config.FD_ITEMS.get();
 	}
 
 	@Override

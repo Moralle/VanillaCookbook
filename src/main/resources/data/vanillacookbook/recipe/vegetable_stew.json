@@ -12,14 +12,28 @@
     {
       "item": "minecraft:carrot"
     },
-    [
-      {"item": "minecraft:potato"},
-      {"item": "minecraft:beetroot"}
-    ],
-    [
-      {"item": "minecraft:potato"},
-      {"item": "minecraft:beetroot"}
-    ],
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:potato"
+        },
+        {
+          "item": "minecraft:beetroot"
+        }
+      ]
+    },
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:potato"
+        },
+        {
+          "item": "minecraft:beetroot"
+        }
+      ]
+    },
     {
       "item": "minecraft:pumpkin"
     },

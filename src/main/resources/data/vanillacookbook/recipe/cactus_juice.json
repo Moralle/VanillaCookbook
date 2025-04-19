@@ -7,14 +7,28 @@
 		"components": {
 			"minecraft:potion_contents": {"potion": "minecraft:water"}}
 	},
-    [
-      {"item": "minecraft:cactus"},
-      {"item": "vanillacookbook:cactus_slice"}
-    ],
-    [
-      {"item": "minecraft:cactus"},
-      {"item": "vanillacookbook:cactus_slice"}
-    ]
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:cactus"
+        },
+        {
+          "item": "vanillacookbook:cactus_slice"
+        }
+      ]
+    },
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:cactus"
+        },
+        {
+          "item": "vanillacookbook:cactus_slice"
+        }
+      ]
+    }
   ],
   "result": {
    "id": "vanillacookbook:cactus_juice"
