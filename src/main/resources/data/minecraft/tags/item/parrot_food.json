@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-	"vanillacookbook:trail_mix"
+	"vanillacookbook:trail_mix",
+	"vanillacookbook:beet_chips",
+	"vanillacookbook:apple_chips"
   ]
 }

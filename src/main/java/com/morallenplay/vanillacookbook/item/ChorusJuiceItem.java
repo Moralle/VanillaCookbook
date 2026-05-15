@@ -1,5 +1,6 @@
 package com.morallenplay.vanillacookbook.item;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
@@ -23,8 +24,9 @@ public class ChorusJuiceItem extends JuiceItem {
 
 		for (int i = 0; i < 16; ++i) {
 			double d3 = entityLiving.getX() + (entityLiving.getRandom().nextDouble() - 0.5D) * 16.0D;
-			double d4 = Mth.clamp(entityLiving.getY() + (double) (entityLiving.getRandom().nextInt(16) - 8), 0.0D,
-					(double) (worldIn.getHeight() - 1));
+			double d4 = Mth.clamp(entityLiving.getY() + (double) (entityLiving.getRandom().nextInt(16) - 8),
+            (double)worldIn.getMinBuildHeight(),
+            (double)(worldIn.getMinBuildHeight() + ((ServerLevel)worldIn).getLogicalHeight() - 1));
 			double d5 = entityLiving.getZ() + (entityLiving.getRandom().nextDouble() - 0.5D) * 16.0D;
 			if (entityLiving.isPassenger()) {
 				entityLiving.stopRiding();
@@ -34,11 +36,13 @@ public class ChorusJuiceItem extends JuiceItem {
 				worldIn.playSound((Player) null, d0, d1, d2, SoundEvents.CHORUS_FRUIT_TELEPORT, SoundSource.PLAYERS,
 						1.0F, 1.0F);
 				entityLiving.playSound(SoundEvents.CHORUS_FRUIT_TELEPORT, 1.0F, 1.0F);
+				entityLiving.resetFallDistance();
 				break;
 			}
 		}
 
 		if (entityLiving instanceof Player) {
+			((Player) entityLiving).resetCurrentImpulseContext();
 			((Player) entityLiving).getCooldowns().addCooldown(this, 20);
 		}
 

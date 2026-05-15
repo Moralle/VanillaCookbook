@@ -11,7 +11,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 import com.morallenplay.vanillacookbook.setup.Config;
-//import com.morallenplay.vanillacookbook.setup.Config;
 import com.morallenplay.vanillacookbook.util.TooltipUtils;
 
 import java.util.List;

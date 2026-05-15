@@ -1,1 +1,1 @@
-give @s vanillacookbook:berry_milk 1
+give @s vanillacookbook:berry_milk[item_name=Milly, rarity=epic] 1

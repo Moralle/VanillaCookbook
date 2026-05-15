@@ -7,7 +7,11 @@
       "vanillacookbook:cooked_beetroot_campfire",
       "vanillacookbook:garden_soup",
       "vanillacookbook:vegetable_stew",
-      "vanillacookbook:beetroot_pie"
+      "vanillacookbook:beetroot_pie",
+	  "vanillacookbook:raw_beet_meat",
+      "vanillacookbook:cooked_beet_meat",
+	  "vanillacookbook:cooked_beet_meat_smoking",
+	  "vanillacookbook:cooked_beet_meat_campfire"
     ]
   },
   "criteria": {

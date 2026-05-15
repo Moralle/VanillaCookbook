@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "vanillacookbook:raw_beet_meat",
+	"vanillacookbook:cooked_beet_meat"
+    ]
+}

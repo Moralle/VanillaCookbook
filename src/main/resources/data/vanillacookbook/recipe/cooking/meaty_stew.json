@@ -10,7 +10,7 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "c:raw_meat"
+      "tag": "c:foods/raw_meat"
     },
     {
       "item": "minecraft:bone"

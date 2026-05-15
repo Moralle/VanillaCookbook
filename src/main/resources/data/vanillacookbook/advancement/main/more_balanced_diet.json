@@ -1008,6 +1008,46 @@
           ]
         }
       }
+    },
+    "ender_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "vanillacookbook:ender_pie"
+          ]
+        }
+      }
+    },
+    "chorus_roll": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "vanillacookbook:chorus_roll"
+          ]
+        }
+      }
+    },
+    "raw_beet_meat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "vanillacookbook:raw_beet_meat"
+          ]
+        }
+      }
+    },
+    "cooked_beet_meat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "vanillacookbook:cooked_beet_meat"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -1307,6 +1347,18 @@
     ],
 	[
 	  "cotton_candy"
+	],
+	[
+	  "ender_pie"
+	],
+	[
+	  "chorus_roll"
+	],
+	[
+	  "raw_beet_meat"
+	],
+	[
+	  "cooked_beet_meat"
 	]
   ]
 }

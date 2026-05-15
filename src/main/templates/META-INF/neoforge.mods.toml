@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/Moralle/VanillaCookbook/issues" #optional
 
 modId="vanillacookbook" #mandatory
 
-version="2.3.2" #mandatory
+version="2.4.0" #mandatory
 
 displayName="Vanilla Cookbook" #mandatory
 

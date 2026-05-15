@@ -6,6 +6,7 @@
     "#c:foods/raw_mutton",
     "#c:foods/raw_pork",
 	"minecraft:rabbit",
+	"vanillacookbook:raw_beet_meat",
   	    { "id": "dropthemeat:raw_bat", "required": false },
   	    { "id": "dropthemeat:raw_bear", "required": false },
   	    { "id": "dropthemeat:raw_bee", "required": false },

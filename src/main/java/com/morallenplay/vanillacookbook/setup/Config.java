@@ -19,6 +19,7 @@ public class Config {
 	public static ModConfigSpec.BooleanValue GOLDEN_HOE_APPLES;
 	public static ModConfigSpec.BooleanValue CHORUS_CAKE_TELEPORTATION;
 	public static ModConfigSpec.BooleanValue CHEESE_SMELTING;
+	public static ModConfigSpec.BooleanValue DRAGON_HEAD_BREATH;
 	public static ModConfigSpec.BooleanValue FOOD_EFFECT_TOOLTIPS;
 	public static ModConfigSpec.BooleanValue FOOD_SPECIAL_TOOLTIPS;
 	
@@ -33,9 +34,10 @@ public class Config {
 		COMMON_BUILDER.comment("Enable/Disable Features").push(CATEGORY_FEATURES);
 		VILLAGER_TRADES = COMMON_BUILDER.comment("Disable additional Villager trades? (Default: false)").define("trades", false);
 		LOOT_GENERATION = COMMON_BUILDER.comment("Disable additional loot? (Default: false)").define("loot", false);
-		GOLDEN_HOE_APPLES = COMMON_BUILDER.comment("Disable Oak/Dark Oak Leaves dropping golden apples when broken with a golden hoe? (Default: false)").define("golden_hoe_apples", false);
+		GOLDEN_HOE_APPLES = COMMON_BUILDER.comment("Disable Oak/Dark Oak Leaves dropping golden apples when broken with a golden hoe? (Default: false)").define("goldenHoeApples", false);
 		CHORUS_CAKE_TELEPORTATION = COMMON_BUILDER.comment("Disable Chorus Cake Teleportation? (Default: false)").define("cakeTeleportation", false);
 		CHEESE_SMELTING = COMMON_BUILDER.comment("Disable the returnal of a bottle when smelting cheese in a furnace? (Default: false)").define("cheeseBottle", false);
+		DRAGON_HEAD_BREATH = COMMON_BUILDER.comment("Disable harvesting of Dragon Breath from Dragon Heads? (Default: true)").define("dragonHeadBreath", true);
 		
 		COMMON_BUILDER.pop();
 		

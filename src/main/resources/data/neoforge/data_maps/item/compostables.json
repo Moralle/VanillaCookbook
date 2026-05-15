@@ -42,6 +42,9 @@
 		"vanillacookbook:wart_pie": {
 				"chance": 1
 		},
+		"vanillacookbook:ender_pie": {
+				"chance": 1
+		},
 		"vanillacookbook:poisonous_pie": {
 				"chance": 1
 		},
@@ -90,10 +93,19 @@
 		"vanillacookbook:berry_brownie": {
 				"chance": 1
 		},
+		"vanillacookbook:chorus_roll": {
+				"chance": 1
+		},
 		"vanillacookbook:trail_mix": {
 				"chance": 0.3
 		},
 		"vanillacookbook:french_toast": {
+				"chance": 1
+		},
+		"vanillacookbook:raw_beet_meat": {
+				"chance": 1
+		},
+		"vanillacookbook:cooked_beet_meat": {
 				"chance": 1
 		},
 		"vanillacookbook:potato_pancake": {

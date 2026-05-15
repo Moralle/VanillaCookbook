@@ -4,8 +4,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.Random;
-
 import net.minecraft.world.level.Level;
 
 public class CactusSliceItem extends Item{
@@ -20,7 +18,7 @@ public class CactusSliceItem extends Item{
 	
 	public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
 		
-		if (!worldIn.isClientSide && (new Random().nextFloat() < chance)) {
+		if (!worldIn.isClientSide && (Math.random() < chance)) {
 			entityLiving.hurt(worldIn.damageSources().generic(), damage);
 	      }
 		

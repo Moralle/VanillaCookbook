@@ -9,7 +9,16 @@
     },
     {
       "tag": "c:eggs"
-    }
+    },
+	{
+	  "tag": "c:foods/milk"
+	},
+	{
+	  "item": "minecraft:beetroot"
+	},
+  	{
+  	  "item": "minecraft:allium"
+  	}
   ],
   "result": {
    "id": "vanillacookbook:meatloaf",

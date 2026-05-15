@@ -3,7 +3,9 @@
   "rewards": {
     "recipes": [
       "vanillacookbook:chorus_juice",
-      "vanillacookbook:chorus_cake"
+      "vanillacookbook:chorus_cake",
+	  "vanillacookbook:chorus_roll",
+	  "vanillacookbook:ender_pie"
     ]
   },
   "criteria": {

@@ -13,7 +13,7 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "c:raw_chicken"
+      "tag": "c:foods/raw_chicken"
     },
     {
       "item": "minecraft:carrot"

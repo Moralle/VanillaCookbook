@@ -13,10 +13,10 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "c:raw_fishes"
+      "tag": "c:foods/save_raw_fish"
     },
     {
-      "tag": "c:raw_fishes"
+      "tag": "c:foods/save_raw_fish"
     }
   ],
   "recipe_book_tab": "meals",

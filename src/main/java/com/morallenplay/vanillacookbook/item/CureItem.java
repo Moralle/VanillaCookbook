@@ -1,7 +1,5 @@
 package com.morallenplay.vanillacookbook.item;
 
-import java.util.Random;
-
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.LivingEntity;
@@ -32,8 +30,8 @@ public class CureItem extends ContainerItem {
 	}
 
 	public void affectPlayer(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
-		if (new Random().nextFloat() < chance) {
-			entityLiving.removeEffect((Holder<MobEffect>) effect);
+		if (Math.random() < chance) {
+			entityLiving.removeEffect(effect);
 		}
 	}
 }

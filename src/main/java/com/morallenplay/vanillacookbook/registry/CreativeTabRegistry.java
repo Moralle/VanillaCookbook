@@ -56,6 +56,7 @@ public class CreativeTabRegistry {
 				    	output.accept(ItemRegistry.BEETROOT_PIE.get());
 				    	output.accept(ItemRegistry.BERRY_PIE.get());
 				    	output.accept(ItemRegistry.WART_PIE.get());
+				    	output.accept(ItemRegistry.ENDER_PIE.get());
 				    	output.accept(ItemRegistry.POISONOUS_PIE.get());
 				    	output.accept(ItemRegistry.BERRY_COOKIE.get());
 				    	output.accept(ItemRegistry.HONEY_COOKIE.get());
@@ -69,6 +70,7 @@ public class CreativeTabRegistry {
 				    	output.accept(ItemRegistry.CREEPE.get());
 				    	output.accept(ItemRegistry.BROWNIE.get());
 				    	output.accept(ItemRegistry.BERRY_BROWNIE.get());
+				    	output.accept(ItemRegistry.CHORUS_ROLL.get());
 				    	output.accept(ItemRegistry.ICE_CREAM.get());
 				    	output.accept(ItemRegistry.CHOCOLATE_ICE_CREAM.get());
 				    	output.accept(ItemRegistry.BERRY_ICE_CREAM.get());
@@ -95,6 +97,8 @@ public class CreativeTabRegistry {
 				    	output.accept(ItemRegistry.MEATLOAF.get());
 				    	output.accept(ItemRegistry.MEATBALL.get());
 				    	output.accept(ItemRegistry.SPICY_MEATBALL.get());
+				    	output.accept(ItemRegistry.RAW_BEET_MEAT.get());
+				    	output.accept(ItemRegistry.COOKED_BEET_MEAT.get());
 				    	output.accept(ItemRegistry.FRENCH_TOAST.get());
 				    	output.accept(ItemRegistry.POTATO_PANCAKE.get());
 				    	output.accept(ItemRegistry.STUFFED_SEA_PICKLE.get());

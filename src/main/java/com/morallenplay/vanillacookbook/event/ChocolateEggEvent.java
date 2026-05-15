@@ -28,7 +28,7 @@ public class ChocolateEggEvent {
 		if (heldItemStack.is(Tags.EASTER_EGG_ITEMS) && block == Blocks.DRAGON_EGG && !player.isShiftKeyDown() && !world.isClientSide) {
             player.getInventory().add(new ItemStack(ItemRegistry.CHOCOLATE_EGG.get()));
             heldItemStack.shrink(1);
-            world.playSound(null, event.getPos(), SoundEvents.CHICKEN_EGG, SoundSource.PLAYERS, 1.0F, 0.8F);
+            world.playSound(null, event.getPos(), SoundEvents.CHICKEN_EGG, SoundSource.BLOCKS, 1.0F, 0.8F);
             event.setCanceled(true);
 			event.setCancellationResult(InteractionResult.SUCCESS);
         }
