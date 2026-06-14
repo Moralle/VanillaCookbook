@@ -10,7 +10,7 @@ tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
 }
 
-version = "2.4.0"
+version = "2.4.1"
 group = 'morallenplay.vanillacookbook'
 
 repositories {

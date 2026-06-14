@@ -14,7 +14,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:raw_meat"
+            "items": "#c:foods/raw_meat"
           }
         ]
       }

@@ -13,7 +13,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:mushrooms"
+            "items": "#c:mushrooms"
           }
         ]
       }

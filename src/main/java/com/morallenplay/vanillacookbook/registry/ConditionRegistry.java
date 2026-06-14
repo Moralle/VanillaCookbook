@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 import com.mojang.serialization.MapCodec;
 import com.morallenplay.vanillacookbook.VanillaCookbook;
 import com.morallenplay.vanillacookbook.setup.FDConfigCondition;
+import com.morallenplay.vanillacookbook.setup.GoldenHoeApplesCondition;
 import com.morallenplay.vanillacookbook.setup.LootConfigCondition;
 import com.morallenplay.vanillacookbook.setup.NPConfigCondition;
 
@@ -32,5 +33,5 @@ public class ConditionRegistry {
 	        LOOT_CONDITION_TYPES.register("loot_config", () -> new LootItemConditionType(LootConfigCondition.CODEC));
 	
 	public static final Supplier<LootItemConditionType> GOLDEN_HOE_APPLES =
-	        LOOT_CONDITION_TYPES.register("golden_hoe_apples", () -> new LootItemConditionType(LootConfigCondition.CODEC));
+	        LOOT_CONDITION_TYPES.register("golden_hoe_apples", () -> new LootItemConditionType(GoldenHoeApplesCondition.CODEC));
 }

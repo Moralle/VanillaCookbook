@@ -15,6 +15,9 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 @Mod(VanillaCookbook.MODID)
 public class VanillaCookbook
@@ -28,6 +31,10 @@ public class VanillaCookbook
     public VanillaCookbook(IEventBus modEventBus, ModContainer modContainer)
     {
     	modEventBus.addListener(this::commonSetup);
+    	
+    	if (FMLEnvironment.dist.isClient()) {
+			modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+		}
 		
         ItemRegistry.ITEMS.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);

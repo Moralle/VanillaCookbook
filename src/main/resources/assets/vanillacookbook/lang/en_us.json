@@ -137,6 +137,17 @@
 	"block.vanillacookbook.pancake_stack": "Pancake Stack",
 	"block.vanillacookbook.brownie_tray": "Brownie Tray",
 	
+	"block.vanillacookbook.book_cake.message0": "Anything is edible if you believe in yourself",
+	"block.vanillacookbook.book_cake.message1": "First we Harvest, then we Craft",
+	"block.vanillacookbook.book_cake.message2": "Remember to eat your vegetables",
+	"block.vanillacookbook.book_cake.message3": ":3",
+	"block.vanillacookbook.book_cake.message4": "Spoons are just tiny shovels if you think about it",
+	"block.vanillacookbook.book_cake.message5": "Caution: Nether Warts may have an addictive taste",
+	"block.vanillacookbook.book_cake.message6": "Some say that Golden Hoes attract Golden Apples",
+	"block.vanillacookbook.book_cake.message7": "The Dragon Egg might be hot enough to melt Chocolate",
+	"block.vanillacookbook.book_cake.message8": "Parrots like Apple Chips",
+	"block.vanillacookbook.book_cake.message9": "Most cakes actually don't lie",
+	
 	"vanillacookbook.tooltip.cheese": "Clears All Effects",
 	"vanillacookbook.tooltip.golden_fruit_salad": "Heals 2 Hearts",
 	"vanillacookbook.tooltip.ice_cream": "Extinguishes Burns",
@@ -173,6 +184,22 @@
 	"advancements.cake.description": "Craft a Book Cake. Thank you for using Vanilla Cookbook!",
 	"advancements.easter_egg.title": "Easter Egg!",
 	"advancements.easter_egg.description": "You found an easter egg, literally!",
+	
+	"vanillacookbook.configuration.compat": "Compatibility Config",
+	"vanillacookbook.configuration.hideFDItems": "Hide \"Duplicate\" Items with Farmer's Delight",
+	"vanillacookbook.configuration.hideNPItems": "Hide \"Duplicate\" Items with Neapolitan",
+	
+	"vanillacookbook.configuration.features": "Feature Config",
+	"vanillacookbook.configuration.trades": "Disable New Villager Trades",
+	"vanillacookbook.configuration.loot": "Disable Additional Loot",
+	"vanillacookbook.configuration.goldenHoeApples": "Disable Golden Apples from Golden Hoes",
+	"vanillacookbook.configuration.cakeTeleportation": "Disable Chorus Cake Teleportation",
+	"vanillacookbook.configuration.cheeseBottle": "Disable Glass Bottles from Cheese Smelting",
+	"vanillacookbook.configuration.dragonHeadBreath": "Disable Dragon Breath from Dragon Heads",
+
+	"vanillacookbook.configuration.client": "Client Config",
+	"vanillacookbook.configuration.foodEffectTooltips": "Food Effect Tooltips",
+	"vanillacookbook.configuration.foodSpecialTooltips": "Food Special Effect Tooltips",
 	
 	"itemGroup.vanillacookbook": "Vanilla Cookbook"
 }

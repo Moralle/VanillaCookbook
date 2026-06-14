@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/Moralle/VanillaCookbook/issues" #optional
 
 modId="vanillacookbook" #mandatory
 
-version="2.4.0" #mandatory
+version="2.4.1" #mandatory
 
 displayName="Vanilla Cookbook" #mandatory
 
@@ -22,8 +22,6 @@ displayURL="https://github.com/Moralle/VanillaCookbook" #optional
 logoFile="vanilla_cookbook.png" #optional
 
 logoBlur=false
-
-itemIcon="vanillacookbook:book_cake"
 
 configBackground="minecraft:textures/block/stripped_spruce_log.png"
 

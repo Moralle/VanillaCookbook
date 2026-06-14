@@ -14,7 +14,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:milk"
+            "items": "#c:foods/milk"
           }
         ]
       }
